@@ -124,6 +124,88 @@ h1 span {
 svg {
   overflow: visible;
 }
+
+.st0 {
+  stroke-width: 1.03px;
+}
+
+.st0, .st1 {
+  fill: none;
+  stroke: #e6e9db;
+  stroke-opacity: .65;
+}
+
+.st2 {
+  fill: url(#radial-gradient);
+}
+
+.st3 {
+  fill: #f7f1e9;
+}
+
+.st4 {
+  fill: url(#radial-gradient1);
+}
+
+.st5 {
+  fill: url(#radial-gradient6);
+}
+
+.st6 {
+  fill: url(#radial-gradient9);
+}
+
+.st7 {
+  fill: url(#radial-gradient8);
+}
+
+.st8 {
+  fill: url(#radial-gradient3);
+}
+
+.st9 {
+  fill: url(#radial-gradient2);
+}
+
+.st10 {
+  fill: url(#radial-gradient5);
+}
+
+.st11 {
+  fill: url(#radial-gradient4);
+}
+
+.st12 {
+  fill: url(#radial-gradient7);
+}
+
+.st1 {
+  stroke-dasharray: 2 6.01;
+  stroke-width: 1.2px;
+}
+
+#externos,
+#internos {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: spin 20s linear infinite;
+  cursor: pointer;
+}
+
+#externos {
+  animation: spin 30s linear infinite;
+}
+
+#externos:hover,
+#internos:hover {
+  animation-play-state: paused;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 .circle-layer {
   position: absolute;
   left: 50%;
