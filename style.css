@@ -95,10 +95,6 @@ h1 span {
   font-weight: 400;
 }
 
-.brand-wrap {
-  margin: 0 0 12px;
-}
-
 .brand-logo {
   display: block;
   width: min(360px, 100%);
@@ -106,21 +102,6 @@ h1 span {
   filter: drop-shadow(0 8px 18px rgba(255,255,255,0.08));
 }
 
-button {
-  border: 1px solid rgba(255,255,255,0.55);
-  background: transparent;
-  color: var(--text-light);
-  border-radius: 999px;
-  padding: 14px 22px;
-  cursor: pointer;
-  font-size: 1.06rem;
-  line-height: 1.2;
-  font-family: Georgia, serif;
-}
-
-button:hover {
-  background: rgba(255,255,255,0.06);
-}
 
 .chart {
   position: relative;
