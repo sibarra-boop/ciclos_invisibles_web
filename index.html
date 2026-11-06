@@ -89,6 +89,29 @@
       .st12 {
         fill: url(#radial-gradient7);
       }
+
+      #externos,
+      #internos {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: spin 20s linear infinite;
+        transform-origin: 50% 50%;
+        cursor: pointer;
+      }
+
+      #externos:hover,
+      #internos:hover {
+        animation-play-state: paused;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
     </style>
     <radialGradient id="radial-gradient" cx="64.37" cy="808.63" fx="64.37" fy="808.63" r=".28" gradientTransform="translate(-7306.2432 92507.4534) scale(114 -114)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#ffe7e3" stop-opacity=".95"/>

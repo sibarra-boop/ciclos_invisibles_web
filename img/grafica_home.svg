@@ -11,10 +11,32 @@
         fill: none;
         stroke: rgba(230, 233, 219, .65);
       }
+
+      #orbits {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: spinOrbit 18s linear infinite;
+        cursor: pointer;
+      }
+
+      #orbits:hover {
+        animation-play-state: paused;
+      }
+
+      @keyframes spinOrbit {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
     </style>
   </defs>
-  <circle class="cls-1" cx="407.6" cy="407.6" r="407"/>
-  <circle class="cls-2" cx="407.6" cy="407.6" r="309"/>
-  <circle class="cls-2" cx="407.6" cy="407.6" r="208"/>
-  <circle class="cls-2" cx="407.6" cy="407.6" r="120"/>
+  <g id="orbits">
+    <circle class="cls-1" cx="407.6" cy="407.6" r="407"/>
+    <circle class="cls-2" cx="407.6" cy="407.6" r="309"/>
+    <circle class="cls-2" cx="407.6" cy="407.6" r="208"/>
+    <circle class="cls-2" cx="407.6" cy="407.6" r="120"/>
+  </g>
 </svg>
