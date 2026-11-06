@@ -121,7 +121,9 @@ h1 span {
   z-index: 0;
   pointer-events: none;
 }
-
+svg {
+  overflow: visible;
+}
 .circle-layer {
   position: absolute;
   left: 50%;
