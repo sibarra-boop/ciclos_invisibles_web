@@ -26,18 +26,18 @@
           <p>Haz clic en un punto<br/>para descubrir más</p>
         </section>
 
-        <section class="chart" aria-label="Diagrama de ciclos">
+        <section id="chart" aria-label="Diagrama de ciclos">
           <a href="./internos/ovulacion/" id="ovulacion-link" class="chart-link" aria-label="Ir a la sección de ovulación">
-            Ovulación
+            <span>Ovulación</span>
           </a>
-          <a href="./internos/fase-folicular/" id="fase-folicular-link" class="chart-link" aria-label="Ir a la sección de fase folicular">
-            Fase Folicular
+          <a href="./internos/fase-folicular/" id="folicular-link" class="chart-link" aria-label="Ir a la sección de fase folicular">
+            <span>Fase Folicular</span>
           </a>
-          <a href="./internos/fase-lutea/" id="fase-lutea-link" class="chart-link" aria-label="Ir a la sección de fase lútea">
-            Fase Lútea
+          <a href="./internos/fase-lutea/" id="lutea-link" class="chart-link" aria-label="Ir a la sección de fase lútea">
+            <span>Fase Lútea</span>
           </a>
-          <a href="./internos/fase-menstrual/" id="fase-menstrual-link" class="chart-link" aria-label="Ir a la sección de fase menstrual">
-            Fase Menstrual
+          <a href="./internos/fase-menstrual/" id="menstrual-link" class="chart-link" aria-label="Ir a la sección de fase menstrual">
+            <span>Fase Menstrual</span>
           </a>
           <a href="./externos/tabues/" id="tabues-link" class="chart-link" aria-label="Ir a la sección de tabues">
             Tabues
@@ -47,7 +47,7 @@
             Sueño
             <p>Descanso y energía</p>
           </a>
-          <a href="./externos/informacion/" id="informacion-link" class="chart-link" aria-label="Ir a la sección de información">
+          <a href="./externos/informacion/" id="info-link" class="chart-link" aria-label="Ir a la sección de información">
             Información y cuidados
           </a>
           <a href="./externos/entorno/" id="entorno-link" class="chart-link" aria-label="Ir a la sección de entorno">
@@ -58,7 +58,7 @@
             Estrés
             <p>Carga mental y emociones</p>
           </a>
-          <a href="./externos/autopercepcion/" id="autopercepcion-link" class="chart-link" aria-label="Ir a la sección de autopercepción">
+          <a href="./externos/autopercepcion/" id="auto-link" class="chart-link" aria-label="Ir a la sección de autopercepción">
             Autopercepción
             <p>Habitos, alimentación y necesidades de nuestro cuerpo</p>
           </a>
@@ -100,19 +100,19 @@
               <circle class="st0" cx="407.31" cy="432.86" r="123.36"/>
               <g id="externos">
                 <circle id="circulo_externo" class="st1" cx="408.53" cy="435.53" r="407.92"/>
-                <circle id="tabues" class="st2" cx="34.99" cy="278.91" r="28.67"/>
-                <circle id="estres" class="st4" cx="757.24" cy="228.31" r="29.7"/>
-                <circle id="auto" class="st9" cx="748.44" cy="652.87" r="25.19"/>
-                <circle id="sueno" class="st8" cx="408.53" cy="30.64" r="30.64"/>
-                <circle id="entorno" class="st11" cx="406.91" cy="841.46" r="29.72"/>
-                <circle id="info" class="st10" cx="43.98" cy="619.14" r="29.61"/>
+                <a href="./externos/tabues/" class="circle-link"><circle id="tabues" class="st2" cx="34.99" cy="278.91" r="28.67"/></a>
+                <a href="" class="circle-link"><circle id="estres" class="st4" cx="757.24" cy="228.31" r="29.7"/></a>
+                <a href="" class="circle-link"><circle id="auto" class="st9" cx="748.44" cy="652.87" r="25.19"/></a>
+                <a href="" class="circle-link"><circle id="sueno" class="st8" cx="408.53" cy="30.64" r="30.64"/></a>
+                <a href="" class="circle-link"><circle id="entorno" class="st11" cx="406.91" cy="841.46" r="29.72"/></a>
+                <a href="" class="circle-link"><circle id="info" class="st10" cx="43.98" cy="619.14" r="29.61"/></a>
               </g>
               <g id="internos">
                 <circle id="circulo_interno" class="st0" cx="407.31" cy="432.86" r="213.82"/>
-                <circle id="ovulacion" class="st5" cx="408.12" cy="224.62" r="76.16"/>
-                <circle id="folicular" class="st12" cx="195.53" cy="433.2" r="48.88"/>
-                <circle id="lutea" class="st7" cx="616.28" cy="433.81" r="56.92"/>
-                <circle id="menstrual" class="st6" cx="408.5" cy="646.48" r="57.96"/>
+                <a href="" class="circle-link"><circle id="ovulacion" class="st5" cx="408.12" cy="224.62" r="76.16"/></a>
+                <a href="" class="circle-link"><circle id="folicular" class="st12" cx="195.53" cy="433.2" r="48.88"/></a>
+                <a href="" class="circle-link"><circle id="lutea" class="st7" cx="616.28" cy="433.81" r="56.92"/></a>
+                <a href="" class="circle-link"><circle id="menstrual" class="st6" cx="408.5" cy="646.48" r="57.96"/></a>
               </g>
               <path id="ci-logo" class="st3" d="M409.43,458.05c.04,2.9,3.42,4.46,5.67,2.62,5.34-4.38,2.82-12.04,7.64-12.21,2.84-.1,4.8.23,6.5,1.97,1.62,1.66,2.5,4.05,2.29,6.83-.96,12.62-19.56,17.1-33.9,14.58-13.75-2.41-24.94-11.39-29.68-24.7-4.42-12.41-1.51-26.45,7.01-36.41,7.33-8.58,16.82-13.54,27.84-15.42,7.54-1.28,15.51-1.05,22.01,2.79,4.04,2.39,5.05,7.09,2.72,10.75-.9,16.56-11.18,29.21-17.35,45.03-.51,1.31-.77,2.74-.75,4.16ZM413.51,463.22c-3,1.67-6.28.42-8.18-1.44-6.13-6.01-.08-16.51,5.47-23.91,6.34-8.45,14.53-17.5,14.56-27.29-3.7.51-7.38-1.08-6.99-4.32.46-3.82-.64-6.94-4.74-8.33-13.27-4.5-27.5,3.09-32.16,16.77-4.63,13.59-4.13,28.91,1.95,42.21,5.27,11.54,21.35,18.2,35.15,11.29,5.21-2.61,9.12-9.21,5.32-13.87-.5-.61-2.81-.68-3.27.1-1.66,2.82-3.9,7.01-7.1,8.79Z"/>
             </svg>
@@ -120,5 +120,6 @@
         </section>
       </header>
     </div>
+    <script src="./js/diagrama-nav.js"></script>
   </body>
 </html>
