@@ -29,6 +29,7 @@
 :root {
   --font-display: "Adobe Jenson Pro", Baskerville, "Times New Roman", serif;
   --font-body: "Acumin Pro", "Avenir Next", "Segoe UI", sans-serif;
+  --font-body-bold: "Acumin Pro", "Avenir Next", "Segoe UI", bold, sans-serif;
  
   --bg-dark: #354d34;
   --orange: #f16437;
@@ -319,13 +320,24 @@ svg {
 
 .chart-link {
   position: absolute;
-  color: var(--white-soft);
-  font-size: 0.9rem;
+  color: var(--cream);
+  font-size: 1.25rem;
   line-height: 1.08;
   text-decoration: none;
-  font-family: var(--font-display);
+  font-family: var(--font-body-bold);
   pointer-events: none;
 }
+
+.chart-1 {
+  position: absolute;
+  color: var(--cream);
+  font-size: .8rem;
+  line-height: 1.08;
+  text-decoration: none;
+  font-family: var(--font-body);
+  pointer-events: none;
+}
+
 .chart-link span {
   background-color: #354d34;
   border: 1px solid currentColor
