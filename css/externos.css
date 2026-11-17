@@ -9,8 +9,9 @@
   font-family: var(--font-body);
 }
 
-.externos-home .topic-home__button {
+.externos-home .button {
   width: 210px;
+  white-space: nowrap;
 }
 
 .externos-home .topic-home__grid {

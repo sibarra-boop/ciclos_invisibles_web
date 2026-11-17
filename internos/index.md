@@ -3,7 +3,7 @@
 ### Lienzo de trabajo recomendado
 
 -   Lienzo de referencia para web: **900 × 600 px**.
--   Mantener la proporción 
+-   Mantener la proporción 1:1
 -   En escritorio, el contenedor conserva la proporción y ocupa el
     espacio disponible sin deformar el contenido.
 -   En tablet y móvil, reorganizar los módulos en vertical; no reducir
@@ -15,7 +15,7 @@
 ``` css
 .canvas {
   width: 100%;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 1 / 1;
   max-width: 900px;
   margin-inline: auto;
   position: relative;

@@ -31,32 +31,34 @@
   --font-body: "Acumin Pro", sans-serif;
   --font-body-bold: "Acumin Pro", bold, sans-serif;
  
-  --bg-dark: #354d34;
+  --verde: #354d34;
   --orange: #f16437;
   --peach: #fbdfd0;
   --cream: #f6f3ec;
   --lime: #e6e878;
   --lavender: #aeaad9;
-  --text-light: #f4efe8;
-  --soft-line: rgba(255, 255, 255, 0.32);
-  --white-soft: rgba(255, 255, 255, 0.85);
 }
 
 * { box-sizing: border-box; }
 
-html, body {
+html {
   margin: 0;
   min-height: 100%;
   font-family: var(--font-body);
-  background: var(--bg-dark);
-  color: var(--text-light);
+  background: var(--verde);
+  color: var(--cream);
 }
 
 body {
+  margin: 0;
+  min-height: 100%;
+  font-family: var(--font-body);
+  background: var(--verde);
+  color: var(--cream);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-dark) 100%);
+  background: linear-gradient(180deg, var(--verde) 0%, var(--verde) 100%);
 }
 
 .page-shell {
@@ -77,8 +79,8 @@ body {
 
 .site-header__brand {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
 }
 
 .site-header__brand img {
@@ -133,9 +135,9 @@ body {
   max-width: 640px;
   margin: 0 auto 56px;
   font-family: var(--font-display);
-  font-size: clamp(1.1rem, 1.5vw, 1.5rem);
+  font-size: clamp(0.85rem, 1.2vw, 1.1rem);
   font-style: italic;
-  line-height: 1.35;
+  line-height: 1.4;
   text-align: center;
   opacity: 0.92;
 }
@@ -157,10 +159,9 @@ body {
 .site-footer__meta {
   align-self: end;
   color: rgba(246, 243, 236, 0.88);
-  font-size: 0.8rem;
+  font-size: 0.5rem;
   letter-spacing: 0.16em;
   line-height: 1.6;
-  text-transform: uppercase;
 }
 
 .site-footer__meta p {
@@ -199,10 +200,9 @@ body {
 
 .site-footer__credit-title,
 .site-footer__names {
-  margin: 0;
   font-family: var(--font-display);
-  font-size: 1rem;
-  line-height: 1.45;
+  font-size: .8rem;
+  line-height: 1.5;
 }
 
 .site-footer__credit-title {
@@ -212,51 +212,13 @@ body {
 .site-footer__logo {
   display: block;
   justify-self: end;
-  width: min(180px, 100%);
+  width: min(60px, 100%);
   height: auto;
   opacity: 0.94;
 }
 
-.topic-home {
-  width: min(1400px, 100%);
-  margin: 0 auto;
-}
 
-.topic-home__hero {
-  display: flex;
-  align-items: flex-start;
-  min-height: calc(100vh - 110px);
-  padding: clamp(24px, 6vh, 56px) 0 72px;
-}
-
-.topic-home__content {
-  position: relative;
-  width: min(100%, 300px);
-  padding-left: 30px;
-}
-
-
-.topic-home__hero h1 {
-  max-width: 290px;
-  margin: 0 0 14px;
-  color: var(--cream);
-  font-family: var(--font-display);
-  font-size: clamp(2rem, 2.4vw, 3.3rem);
-  font-weight: 500;
-  letter-spacing: -0.03em;
-  line-height: 1.08;
-}
-
-.topic-home__description {
-  max-width: 205px;
-  margin: 0 0 24px 6px;
-  color: var(--cream);
-  font-family: var(--font-display);
-  font-size: 0.95rem;
-  line-height: 1.2;
-}
-
-.topic-home__button {
+.button {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -270,18 +232,19 @@ body {
   font-family: var(--font-body);
   font-size: 0.78rem;
   text-decoration: none;
-  transition: background-color 160ms ease, color 160ms ease;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
 }
 
-.topic-home__button:hover,
-.topic-home__button:focus-visible {
-  background-color: var(--cream);
-  color: var(--bg-dark);
+.button:hover,
+.button:focus-visible {
+  background-color: var(--lime);
+  border-color: var(--lime);
+  color: var(--verde);
 }
 
 .topic-home__related {
   padding: 56px 36px 96px;
-  border-top: 1px solid var(--soft-line);
+  border-top: 1px solid var(--peach);
 }
 
 .topic-home__related h2 {
@@ -302,7 +265,7 @@ body {
   justify-content: space-between;
   gap: 12px;
   padding: 16px 0;
-  border-top: 1px solid var(--soft-line);
+  border-top: 1px solid var(--peach);
   color: var(--cream);
   font-family: var(--font-display);
   font-size: 1.1rem;
@@ -391,7 +354,7 @@ svg {
 }
 
 .st3 {
-  fill: #f7f1e9;
+  fill: url(#radial-gradient10);
 }
 
 .st4 {
@@ -734,6 +697,7 @@ svg {
 .label-entorno { left: 50%; bottom: 3%; transform: translateX(-50%); }
 .label-info { left: 50%; bottom: 28%; transform: translateX(-50%); }
 
+.subtitle,
 h2 {
   margin: 20px 0 18px;
   font-size: clamp(2rem, 2.4vw, 3.3rem);
@@ -840,6 +804,25 @@ h2 {
 
 @media (max-width: 640px) {
   .page-shell { padding: 20px 20px 20px; }
+
+
+.topic-home {
+  width: min(1400px, 100%);
+  margin: 0 auto;
+}
+
+.topic-home__hero {
+  display: flex;
+  align-items: flex-start;
+  min-height: calc(100vh - 110px);
+  padding: clamp(24px, 6vh, 56px) 0 72px;
+}
+
+.topic-home__content {
+  position: relative;
+  width: min(100%, 300px);
+  padding-left: 30px;
+}
 
   .topic-home__hero {
     min-height: max(360px, calc(100vh - 110px));
