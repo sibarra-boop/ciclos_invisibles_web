@@ -1,0 +1,20 @@
+.internos-home .topic-home__hero h1 {
+  max-width: 230px;
+}
+
+.internos-home .topic-home__description {
+  max-width: 215px;
+  font-size: 0.8rem;
+  line-height: 1.28;
+  font-family: var(--font-body);
+}
+
+.internos-home .topic-home__grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (max-width: 640px) {
+  .internos-home .topic-home__grid {
+    grid-template-columns: 1fr;
+  }
+}

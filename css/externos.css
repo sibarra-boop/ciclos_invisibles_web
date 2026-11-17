@@ -1,0 +1,24 @@
+.externos-home .topic-home__hero h1 {
+  max-width: 230px;
+}
+
+.externos-home .topic-home__description {
+  max-width: 215px;
+  font-size: 0.8rem;
+  line-height: 1.28;
+  font-family: var(--font-body);
+}
+
+.externos-home .topic-home__button {
+  width: 210px;
+}
+
+.externos-home .topic-home__grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 640px) {
+  .externos-home .topic-home__grid {
+    grid-template-columns: 1fr;
+  }
+}
