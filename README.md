@@ -1,12 +1,12 @@
 # Ciclos Invisibles
 
-Proyecto escolar hecho con [Astro](https://astro.build/). La versión nueva vive en `src/`; los HTML, CSS, JS e imágenes anteriores se conservan como referencia.
+Astro Template [Astro](https://astro.build/). La versión nueva vive en `src/`; los HTML, CSS, JS e imágenes anteriores se conservan como referencia.
 
 ## Empezar en Mac
 
 ### 1. Instalar Node.js
 
-Instalen [Node.js 26 LTS](https://nodejs.org/en/download/) y cierren y vuelvan a abrir la Terminal.
+Si todavía no tienen Node.js, instalen una versión LTS desde [nodejs.org](https://nodejs.org/en/download/) y cierren y vuelvan a abrir la Terminal.
 
 Comprueben la instalación:
 
@@ -15,7 +15,7 @@ node -v
 npm -v
 ```
 
-Este proyecto necesita Node `22.23.4` o superior. Recomendamos Node 26 LTS para que las dos trabajen con la misma versión.
+El proyecto funciona con Node 18.20.8, Node 20.3 o superior y las versiones posteriores. Si `npm install` muestra un error de versión, actualicen Node desde el enlace anterior.
 
 ### 2. Clonar el proyecto
 
@@ -44,6 +44,14 @@ npm run build
 ```
 
 `npm run build` revisa el proyecto y genera la versión final en `dist/`. Si termina sin errores, el sitio puede publicarse.
+
+Para revisar esa versión final en el navegador:
+
+```bash
+npm run preview
+```
+
+`npm run preview` sirve sólo para revisar el resultado de `npm run build`; para trabajar normalmente usen `npm run dev`.
 
 ## Dónde está cada cosa
 
@@ -140,8 +148,8 @@ Usen estas referencias para comparar contenido y apariencia. La implementación 
 
 ## Versiones verificadas
 
-- Astro `7.4.13`.
-- Node.js `22.23.4` como mínimo; Node 26 LTS recomendado para Mac.
+- Astro `5.16.6`, fijado para evitar actualizaciones inesperadas y mantener compatibilidad con instalaciones anteriores de Node.
+- Compatible con Node 18.20.8, Node 20.3 o superior y versiones posteriores.
 - No se usan React, Vue ni dependencias adicionales.
 
 Referencias oficiales:
