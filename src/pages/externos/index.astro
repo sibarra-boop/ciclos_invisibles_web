@@ -1,0 +1,17 @@
+---
+import TopicHome from "../../components/sections/TopicHome.astro";
+import { externalRoutes } from "../../data/routes";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Externo | Ciclos Invisibles" bodyClass="externos-home">
+  <TopicHome
+    id="externos"
+    title="Nada sucede de manera aislada."
+    description="Explora los factores externos que se relacionan con tu bienestar menstrual y descubre cómo forman parte de una misma red."
+    buttonLabel="Explora las conexiones"
+    image="/img/externos/homeexternos.svg"
+    imageAlt="Diagrama con los factores externos del ciclo menstrual"
+    routes={externalRoutes}
+  />
+</BaseLayout>

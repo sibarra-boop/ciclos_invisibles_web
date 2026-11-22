@@ -1,0 +1,14 @@
+---
+import { topicRoutes } from "../../data/routes";
+---
+
+<div class="home-diagram">
+  <img src="/img/diagrama-home.svg" alt="Diagrama que relaciona las fases del ciclo con factores externos" />
+  <nav aria-label="Explorar el diagrama">
+    <ul class="home-topic-links">
+      {topicRoutes.map((route) => (
+        <li><a href={route.href}>{route.title}</a></li>
+      ))}
+    </ul>
+  </nav>
+</div>

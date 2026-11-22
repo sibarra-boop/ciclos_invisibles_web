@@ -1,0 +1,58 @@
+import type { TopicContent } from "./types";
+
+export const externos: Record<string, TopicContent> = {
+  autopercepcion: {
+    slug: "autopercepcion",
+    title: "Autopercepción",
+    href: "/externos/autopercepcion/",
+    section: "externos",
+    description: "Hábitos, alimentación y necesidades de nuestro cuerpo también forman parte de la manera en que vivimos el ciclo.",
+    image: "/img/externos/autopercepcion.svg",
+    imageAlt: "Ilustración sobre autopercepción",
+  },
+  entorno: {
+    slug: "entorno",
+    title: "Entorno",
+    href: "/externos/entorno/",
+    section: "externos",
+    description: "El trabajo, el tiempo disponible y las condiciones de vida influyen en cómo percibimos y atendemos las señales del cuerpo.",
+    image: "/img/externos/Entorno.svg",
+    imageAlt: "Ilustración sobre el entorno",
+  },
+  estres: {
+    slug: "estres",
+    title: "Estrés",
+    href: "/externos/estres/",
+    section: "externos",
+    description: "La carga mental y las emociones se relacionan con el descanso, la energía y nuestra experiencia del ciclo.",
+    image: "/img/externos/estres.svg",
+    imageAlt: "Ilustración sobre el estrés",
+  },
+  informacion: {
+    slug: "informacion",
+    title: "Información y cuidados",
+    href: "/externos/informacion/",
+    section: "externos",
+    description: "La educación, el acceso a información clara y los cuidados de salud ayudan a comprender mejor nuestros procesos.",
+    image: "/img/externos/info.svg",
+    imageAlt: "Ilustración sobre información y cuidados",
+  },
+  sueno: {
+    slug: "sueno",
+    title: "Sueño",
+    href: "/externos/sueno/",
+    section: "externos",
+    description: "El descanso y la energía cambian nuestra forma de sentir, responder y reconocer las señales del cuerpo.",
+    image: "/img/externos/sueno.svg",
+    imageAlt: "Ilustración sobre sueño y descanso",
+  },
+  tabues: {
+    slug: "tabues",
+    title: "Tabúes",
+    href: "/externos/tabues/",
+    section: "externos",
+    description: "Lo que nos enseñaron a callar puede influir en cómo nombramos, compartimos y comprendemos la experiencia menstrual.",
+    image: "/img/externos/tabu1.svg",
+    imageAlt: "Ilustración sobre tabúes",
+  },
+};

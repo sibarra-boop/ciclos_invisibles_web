@@ -1,0 +1,37 @@
+---
+import type { TopicRoute } from "../../data/types";
+
+interface Props {
+  id: string;
+  title: string;
+  description: string;
+  buttonLabel: string;
+  image: string;
+  imageAlt: string;
+  routes: TopicRoute[];
+}
+
+const { id, title, description, buttonLabel, image, imageAlt, routes } = Astro.props;
+---
+
+<main>
+  <div class="hero">
+    <section class="intro" aria-labelledby={`${id}-title`}>
+      <div class="topic-home__content">
+        <h1 id={`${id}-title`} class="subtitle">{title}</h1>
+        <p class="topic-home__description">{description}</p>
+        <a class="button" href={`#${id}-temas`}><span>{buttonLabel}</span></a>
+      </div>
+    </section>
+    <figure class="topic-home__graphic">
+      <img src={image} alt={imageAlt} />
+    </figure>
+  </div>
+
+  <section class="topic-home__related" id={`${id}-temas`} aria-labelledby={`${id}-temas-title`}>
+    <h2 id={`${id}-temas-title`}>Explora cada tema</h2>
+    <div class="topic-home__grid">
+      {routes.map((route) => <a href={route.href}>{route.title}</a>)}
+    </div>
+  </section>
+</main>

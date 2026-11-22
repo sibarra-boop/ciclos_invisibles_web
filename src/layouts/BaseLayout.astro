@@ -1,0 +1,35 @@
+---
+import SiteFooter from "../components/layout/SiteFooter.astro";
+import SiteHeader from "../components/layout/SiteHeader.astro";
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+  bodyClass?: string;
+}
+
+const {
+  title,
+  description = "Explora las relaciones entre el ciclo menstrual, las emociones y el entorno.",
+  bodyClass = "",
+} = Astro.props;
+const pathname = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+  </head>
+  <body class={bodyClass}>
+    <div class="page-shell">
+      <SiteHeader pathname={pathname} />
+      <slot />
+    </div>
+    <SiteFooter />
+  </body>
+</html>
