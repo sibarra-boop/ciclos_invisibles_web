@@ -1,0 +1,22 @@
+---
+import type { TopicRoute } from "../../data/types";
+
+interface Props {
+  routes: TopicRoute[];
+  currentPath: string;
+}
+
+const { routes, currentPath } = Astro.props;
+---
+
+<nav aria-label="Temas relacionados">
+  <ul class="topic-nav">
+    {routes.map((route) => (
+      <li>
+        <a href={route.href} aria-current={route.href === currentPath ? "page" : undefined}>
+          {route.title}
+        </a>
+      </li>
+    ))}
+  </ul>
+</nav>

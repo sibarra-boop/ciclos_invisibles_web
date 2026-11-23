@@ -1,0 +1,24 @@
+---
+import TopicNav from "../components/navigation/TopicNav.astro";
+import type { TopicContent, TopicRoute } from "../data/types";
+import BaseLayout from "./BaseLayout.astro";
+
+interface Props {
+  topic: TopicContent;
+  routes: TopicRoute[];
+}
+
+const { topic, routes } = Astro.props;
+const sectionLabel = topic.section === "internos" ? "Fases del ciclo" : "Factores externos";
+---
+
+<BaseLayout title={`${topic.title} | Ciclos Invisibles`} description={topic.description} bodyClass={`${topic.section}-detail`}>
+  <main class="topic-detail">
+    <p class="topic-detail__eyebrow">{sectionLabel}</p>
+    <h1>{topic.title}</h1>
+    <p class="topic-detail__description">{topic.description}</p>
+    <img class="topic-detail__image" src={topic.image} alt={topic.imageAlt} />
+    <slot />
+    <TopicNav routes={routes} currentPath={topic.href} />
+  </main>
+</BaseLayout>

@@ -1,0 +1,23 @@
+---
+import { mainRoutes } from "../../data/routes";
+
+interface Props {
+  pathname: string;
+}
+
+const { pathname } = Astro.props;
+---
+
+<header class="site-header">
+  <a href="/" class="site-header__brand" aria-label="Ciclos Invisibles, inicio">
+    <img src="/img/simbolo.png" alt="" />
+  </a>
+  <nav class="site-header__nav" aria-label="Navegación principal">
+    {mainRoutes.map((route) => (
+      <a href={route.href} aria-current={pathname.startsWith(route.href) ? "page" : undefined}>
+        {route.title}
+      </a>
+    ))}
+  </nav>
+  <img class="site-header__line" src="/img/linea-homebase.svg" alt="" />
+</header>
