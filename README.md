@@ -92,18 +92,19 @@ Las listas de rutas y sus nombres están centralizadas en [`src/data/routes.ts`]
 Un layout es la plantilla común que envuelve una vista.
 
 - [`BaseLayout.astro`](./src/layouts/BaseLayout.astro) crea el documento HTML, título, encabezado y pie. Lo usan todas las páginas.
-- [`TopicLayout.astro`](./src/layouts/TopicLayout.astro) crea la estructura común de cada tema: categoría, título, descripción, imagen y navegación.
+- [`InternalPhaseLayout.astro`](./src/layouts/InternalPhaseLayout.astro) comparte la estructura visual y navegación de las cuatro fases internas.
+- [`TopicLayout.astro`](./src/layouts/TopicLayout.astro) crea la estructura común de los temas externos.
 - `<slot />` indica el lugar donde una vista puede agregar contenido propio.
 
-Si algo debe cambiar en **todo el sitio**, revisen `BaseLayout`. Si debe cambiar en **todos los temas**, revisen `TopicLayout`.
+Si algo debe cambiar en **todo el sitio**, revisen `BaseLayout`. Para las fases internas, revisen `InternalPhaseLayout`; para los temas externos, `TopicLayout`.
 
 ## Ejemplo: editar Ovulación
 
-La ruta `/internos/ovulacion/` usa tres partes:
+Las cuatro rutas de fases internas comparten `InternalPhaseLayout`. En Ovulación:
 
-1. [`src/pages/internos/ovulacion/index.astro`](./src/pages/internos/ovulacion/index.astro) define la vista y selecciona sus datos.
-2. [`src/data/internos.ts`](./src/data/internos.ts) contiene el título, descripción e imagen de `ovulacion`.
-3. [`src/layouts/TopicLayout.astro`](./src/layouts/TopicLayout.astro) decide cómo se muestran esos datos.
+1. [`src/pages/internos/ovulacion/index.astro`](./src/pages/internos/ovulacion/index.astro) selecciona los datos y pasa el SVG para insertarlo inline.
+2. [`src/data/internos.ts`](./src/data/internos.ts) contiene el título, descripción, imagen, sensaciones, influencia, frases y dato de cada fase.
+3. [`src/layouts/InternalPhaseLayout.astro`](./src/layouts/InternalPhaseLayout.astro) muestra esos datos con el diseño compartido y marca la fase activa en la navegación.
 
 Para cambiar sólo el texto o la imagen de Ovulación, editen esta entrada en `src/data/internos.ts`:
 
@@ -112,6 +113,10 @@ ovulacion: {
   title: "Ovulación",
   description: "Texto de la vista...",
   image: "/img/internos/ovulacion.svg",
+  feelings: ["Cambios de energía", "Cambios en el deseo"],
+  influence: "Texto sobre otros factores...",
+  phrases: ["Frase uno", "Frase dos"],
+  fact: "Dato relacionado con la fase...",
 }
 ```
 
@@ -127,12 +132,13 @@ Los temas externos funcionan igual, pero sus textos están en [`src/data/externo
 
 | Quiero cambiar… | Archivo o carpeta |
 | --- | --- |
-| Texto o imagen de una fase | `src/data/internos.ts` |
+| Contenido de una fase | `src/data/internos.ts` |
 | Texto o imagen de un factor externo | `src/data/externos.ts` |
 | Orden, nombre o enlace de navegación | `src/data/routes.ts` |
 | Encabezado | `src/components/layout/SiteHeader.astro` |
 | Pie de página | `src/components/layout/SiteFooter.astro` |
-| Estructura de todos los temas | `src/layouts/TopicLayout.astro` |
+| Estructura de las fases internas | `src/layouts/InternalPhaseLayout.astro` |
+| Estructura de los temas externos | `src/layouts/TopicLayout.astro` |
 | Colores y estilos generales | `src/styles/global.css` |
 | Una imagen publicada | `public/img/` |
 

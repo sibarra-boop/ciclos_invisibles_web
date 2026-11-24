@@ -1,23 +1,31 @@
-import type { TopicContent } from "./types";
+import type { InternalPhaseContent } from "./types";
 
-export const internos: Record<string, TopicContent> = {
+export const internos: Record<string, InternalPhaseContent> = {
   "fase-folicular": {
     slug: "fase-folicular",
     title: "Fase folicular",
     href: "/internos/fase-folicular/",
     section: "internos",
-    description: "Es la primera parte del ciclo. Aquí comienza a prepararse un nuevo óvulo y aumenta gradualmente el estrógeno, lo que puede influir en la energía, el estado de ánimo y el deseo.",
+    description: "Es la primera parte del ciclo. Aquí comienza a prepararse un nuevo óvulo y aumenta gradualmente el estrógeno, lo que puede influir en tu energía, estado de ánimo y deseo.",
     image: "/img/internos/folicular.svg",
     imageAlt: "Ilustración de la fase folicular",
+    feelings: ["Más energía", "Mayor motivación", "Cambios en el ánimo", "Aumento del deseo sexual", "Piel más luminosa"],
+    influence: "La experiencia en esta fase también puede variar por factores externos como el estrés, el sueño, la alimentación y el entorno.",
+    phrases: ["“Es cuando andas de buen humor, ¿no?”", "“Aquí ya deberías tener más energía.”"],
+    fact: "El aumento de estrógenos en esta fase participa en cambios del organismo, aunque cada experiencia puede ser diferente.",
   },
   ovulacion: {
     slug: "ovulacion",
     title: "Ovulación",
     href: "/internos/ovulacion/",
     section: "internos",
-    description: "Es el momento en el que se libera un óvulo desde el ovario. Suele ocurrir hacia la mitad del ciclo, aunque el momento exacto puede variar.",
+    description: "Es el momento en el que se libera un óvulo desde el ovario. Suele ocurrir hacia la mitad del ciclo, aunque el momento exacto puede variar. Es parte de nuestro proceso hormonal que conecta distintas señales.",
     image: "/img/internos/ovulacion.svg",
     imageAlt: "Ilustración de la ovulación",
+    feelings: ["Cambios de energía", "Cambios en el deseo", "Variaciones del ánimo", "Mayor sensibilidad", "Molestias leves"],
+    influence: "La experiencia de esta fase también puede variar por nuestro sueño, el estrés, la alimentación y nuestro entorno.",
+    phrases: ["“Solo andas así porque estás ovulando.”", "“En esta fase siempre tienes más ganas.”"],
+    fact: "La ovulación puede coincidir con cambios corporales, pero no determina cómo sentimos ni cómo actuamos.",
   },
   "fase-lutea": {
     slug: "fase-lutea",
@@ -27,14 +35,23 @@ export const internos: Record<string, TopicContent> = {
     description: "Es la segunda parte del ciclo. El folículo que liberó el óvulo se transforma en cuerpo lúteo, que produce progesterona y prepara el cuerpo por si hubiera un embarazo.",
     image: "/img/internos/lutea.svg",
     imageAlt: "Ilustración de la fase lútea",
+    feelings: ["Mayor sensibilidad", "Cambios en el ánimo", "Cansancio o baja energía", "Hinchazón", "Antojos más frecuentes"],
+    influence: "Nuestra experiencia también puede variar con el estrés, el sueño, la alimentación y el entorno.",
+    phrases: ["“Estoy más sensible de lo normal.”", "“Solo son antojos, ¿no?”"],
+    fact: "La progesterona puede relacionarse con cambios en el sueño, el apetito y la temperatura corporal.",
   },
   "fase-menstrual": {
     slug: "fase-menstrual",
     title: "Fase menstrual",
+    displayTitle: "Menstruación",
     href: "/internos/fase-menstrual/",
     section: "internos",
     description: "Es el inicio del ciclo. El revestimiento del útero se desprende y se expulsa en forma de sangrado, dando paso a un nuevo ciclo.",
     image: "/img/internos/menstruacion.svg",
     imageAlt: "Ilustración de la fase menstrual",
+    feelings: ["Dolor o cólicos", "Baja energía", "Cambios en el ánimo", "Sensibilidad emocional", "Mayor necesidad de descanso"],
+    influence: "Nuestra experiencia en esta fase también puede variar por factores externos como el estrés, el sueño, la alimentación y nuestro entorno.",
+    phrases: ["“Es solo un periodo, aguántate.”", "“Estás más sensible porque andas en tus días”"],
+    fact: "La menstruación es un proceso fisiológico natural, no una enfermedad. Cada experiencia menstrual puede ser distinta.",
   },
 };

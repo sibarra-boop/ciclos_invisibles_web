@@ -12,3 +12,11 @@ export interface TopicContent extends TopicRoute {
   image: string;
   imageAlt: string;
 }
+
+export interface InternalPhaseContent extends TopicContent {
+  displayTitle?: string;
+  feelings: string[];
+  influence: string;
+  phrases: string[];
+  fact: string;
+}
