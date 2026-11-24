@@ -6,12 +6,11 @@ interface Props {
   title: string;
   description: string;
   buttonLabel: string;
-  image: string;
-  imageAlt: string;
+  diagram: string;
   routes: TopicRoute[];
 }
 
-const { id, title, description, buttonLabel, image, imageAlt, routes } = Astro.props;
+const { id, title, description, buttonLabel, diagram, routes } = Astro.props;
 ---
 
 <main>
@@ -24,7 +23,7 @@ const { id, title, description, buttonLabel, image, imageAlt, routes } = Astro.p
       </div>
     </section>
     <figure class="topic-home__graphic">
-      <img src={image} alt={imageAlt} />
+      <Fragment set:html={diagram} />
     </figure>
   </div>
 

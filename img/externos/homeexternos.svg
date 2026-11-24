@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 888.06 626">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 888.06 626" role="group" aria-labelledby="diagram-title">
+  <title id="diagram-title">Diagrama interactivo de los factores externos</title>
   <defs>
     <style>
       .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
@@ -240,28 +240,45 @@
     <text class="cls-9" transform="translate(536.31 315.04)"><tspan x="0" y="0">m</tspan></text>
     <text class="cls-9" transform="translate(554.85 315.04)"><tspan x="0" y="0">a</tspan></text>
   </g>
-  <circle class="cls-26" cx="246" cy="74" r="51"/>
-  <circle class="cls-18" cx="246" cy="74" r="5"/>
-  <circle class="cls-25" cx="660" cy="74" r="52"/>
-  <circle class="cls-18" cx="660" cy="74" r="5"/>
-  <circle class="cls-24" cx="771" cy="303" r="52"/>
-  <circle class="cls-18" cx="771" cy="303" r="5"/>
-  <circle class="cls-28" cx="659" cy="552" r="52"/>
-  <circle class="cls-18" cx="659" cy="552" r="5"/>
-  <circle class="cls-27" cx="245" cy="551" r="52"/>
-  <circle class="cls-18" cx="245" cy="551" r="5"/>
-  <circle class="cls-29" cx="165" cy="303" r="52"/>
-  <circle class="cls-18" cx="165" cy="303" r="5"/>
+  <a href="/externos/tabues/" aria-label="Tabúes">
+    <circle class="cls-26" cx="246" cy="74" r="51"/>
+    <circle class="cls-18" cx="246" cy="74" r="5"/>
+  </a>
+  <a href="/externos/sueno/" aria-label="Sueño">
+    <circle class="cls-25" cx="660" cy="74" r="52"/>
+    <circle class="cls-18" cx="660" cy="74" r="5"/>
+  </a>
+  <a href="/externos/estres/" aria-label="Estrés">
+    <circle class="cls-24" cx="771" cy="303" r="52"/>
+    <circle class="cls-18" cx="771" cy="303" r="5"/>
+  </a>
+  <a href="/externos/autopercepcion/" aria-label="Autopercepción">
+    <circle class="cls-28" cx="659" cy="552" r="52"/>
+    <circle class="cls-18" cx="659" cy="552" r="5"/>
+  </a>
+  <a href="/externos/entorno/" aria-label="Entorno">
+    <circle class="cls-27" cx="245" cy="551" r="52"/>
+    <circle class="cls-18" cx="245" cy="551" r="5"/>
+  </a>
+  <a href="/externos/informacion/" aria-label="Información y cuidados">
+    <circle class="cls-29" cx="165" cy="303" r="52"/>
+    <circle class="cls-18" cx="165" cy="303" r="5"/>
+  </a>
+  <a href="/externos/tabues/" aria-label="Tabúes">
   <g class="cls-17">
     <text class="cls-8" transform="translate(115 80)"><tspan x="0" y="0">T</tspan></text>
     <text class="cls-19" transform="translate(124.7 80)"><tspan x="0" y="0">abú</tspan></text>
     <text class="cls-19" transform="translate(159.5 80)"><tspan x="0" y="0">e</tspan></text>
     <text class="cls-19" transform="translate(170.65 80)"><tspan x="0" y="0">s</tspan></text>
   </g>
+  </a>
+  <a href="/externos/sueno/" aria-label="Sueño">
   <g class="cls-17">
     <text class="cls-16" transform="translate(716 80)"><tspan x="0" y="0">S</tspan></text>
     <text class="cls-16" transform="translate(729.16 80)"><tspan x="0" y="0">ueño</tspan></text>
   </g>
+  </a>
+  <a href="/externos/estres/" aria-label="Estrés">
   <g class="cls-17">
     <text class="cls-16" transform="translate(828 309)"><tspan x="0" y="0">E</tspan></text>
     <text class="cls-16" transform="translate(841.24 309)"><tspan x="0" y="0">s</tspan></text>
@@ -269,6 +286,8 @@
     <text class="cls-16" transform="translate(865.97 309)"><tspan x="0" y="0">é</tspan></text>
     <text class="cls-16" transform="translate(877.65 309)"><tspan x="0" y="0">s</tspan></text>
   </g>
+  </a>
+  <a href="/externos/autopercepcion/" aria-label="Autopercepción">
   <g class="cls-17">
     <text class="cls-12" transform="translate(716 560)"><tspan x="0" y="0">A</tspan></text>
     <text class="cls-14" transform="translate(730.23 560)"><tspan x="0" y="0">u</tspan></text>
@@ -283,6 +302,8 @@
     <text class="cls-16" transform="translate(828.86 560)"><tspan x="0" y="0">c</tspan></text>
     <text class="cls-16" transform="translate(840.17 560)"><tspan x="0" y="0">ión</tspan></text>
   </g>
+  </a>
+  <a href="/externos/entorno/" aria-label="Entorno">
   <g class="cls-17">
     <text class="cls-16" transform="translate(107 560)"><tspan x="0" y="0">E</tspan></text>
     <text class="cls-16" transform="translate(119.98 560)"><tspan x="0" y="0">n</tspan></text>
@@ -291,6 +312,8 @@
     <text class="cls-16" transform="translate(151.26 560)"><tspan x="0" y="0">r</tspan></text>
     <text class="cls-16" transform="translate(158.79 560)"><tspan x="0" y="0">no</tspan></text>
   </g>
+  </a>
+  <a href="/externos/informacion/" aria-label="Información y cuidados">
   <g class="cls-17">
     <text class="cls-10" transform="translate(0 309)"><tspan x="0" y="0">I</tspan></text>
     <text class="cls-16" transform="translate(5.83 309)"><tspan x="0" y="0">n</tspan></text>
@@ -302,4 +325,5 @@
     <text class="cls-16" transform="translate(74.18 309)"><tspan x="0" y="0">c</tspan></text>
     <text class="cls-16" transform="translate(85.49 309)"><tspan x="0" y="0">ión</tspan></text>
   </g>
+  </a>
 </svg>

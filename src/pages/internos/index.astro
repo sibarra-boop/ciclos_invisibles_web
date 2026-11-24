@@ -1,4 +1,5 @@
 ---
+import diagram from "../../../img/internos/homeinternos.svg?raw";
 import TopicHome from "../../components/sections/TopicHome.astro";
 import { internalRoutes } from "../../data/routes";
 import BaseLayout from "../../layouts/BaseLayout.astro";
@@ -10,8 +11,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     title="Lo que sucede dentro de ti."
     description="Un ciclo en constante transformación. Cuatro fases, múltiples procesos y una experiencia que nunca es exactamente igual."
     buttonLabel="Explora las fases"
-    image="/img/internos/homeinternos.svg"
-    imageAlt="Diagrama con las cuatro fases del ciclo menstrual"
+    diagram={diagram}
     routes={internalRoutes}
   />
 </BaseLayout>

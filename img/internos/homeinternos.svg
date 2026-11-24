@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 704.15 640.16">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 704.15 640.16" role="group" aria-labelledby="diagram-title">
+  <title id="diagram-title">Diagrama interactivo de las cuatro fases del ciclo menstrual</title>
   <defs>
     <style>
       .cls-1 {
@@ -121,12 +121,21 @@
     </radialGradient>
   </defs>
   <circle class="cls-7" cx="358.87" cy="321.75" r="306"/>
-  <path class="cls-3" d="M356.87.75c81.67-4.13,148,78,129,150-10,52,22,89,2,134-28,65-125,75-182,44-80-40-149-91-136-165C177.87,94.75,281.87,4.75,356.87.75Z"/>
-  <path class="cls-10" d="M116.87,181.75c87-12,160,27,214,70,54,42,56,109-13,149-72,43-193,58-259,6-68-50-77-145-24-193C58.87,193.75,85.87,183.75,116.87,181.75Z"/>
-  <path class="cls-8" d="M595.87,179.75c80-12,116,57,106,128-9,70-98,144-181,168-74,20-134-40-163-101-34-73,31-150,110-169C515.87,191.75,559.87,187.75,595.87,179.75Z"/>
-  <path class="cls-2" d="M340.98,345.53c81-29,171,12,208,77,45,77-32,141-80,181-59,53-149,44-199-4-48-39-122-59-118-119C157.98,414.53,266.98,365.53,340.98,345.53Z"/>
+  <a href="/internos/fase-menstrual/" aria-label="Fase menstrual">
+    <path class="cls-3" d="M356.87.75c81.67-4.13,148,78,129,150-10,52,22,89,2,134-28,65-125,75-182,44-80-40-149-91-136-165C177.87,94.75,281.87,4.75,356.87.75Z"/>
+  </a>
+  <a href="/internos/fase-folicular/" aria-label="Fase folicular">
+    <path class="cls-10" d="M116.87,181.75c87-12,160,27,214,70,54,42,56,109-13,149-72,43-193,58-259,6-68-50-77-145-24-193C58.87,193.75,85.87,183.75,116.87,181.75Z"/>
+  </a>
+  <a href="/internos/ovulacion/" aria-label="Ovulación">
+    <path class="cls-8" d="M595.87,179.75c80-12,116,57,106,128-9,70-98,144-181,168-74,20-134-40-163-101-34-73,31-150,110-169C515.87,191.75,559.87,187.75,595.87,179.75Z"/>
+  </a>
+  <a href="/internos/fase-lutea/" aria-label="Fase lútea">
+    <path class="cls-2" d="M340.98,345.53c81-29,171,12,208,77,45,77-32,141-80,181-59,53-149,44-199-4-48-39-122-59-118-119C157.98,414.53,266.98,365.53,340.98,345.53Z"/>
+  </a>
   <path class="cls-11" d="M356.38,273.69c10.18,30.16,24.18,42.5,54.73,47.99-31.82,6.85-43.27,23.31-54.73,53.47-10.18-31.54-21.64-45.25-52.19-53.47C337.29,316.19,348.74,301.11,356.38,273.69Z"/>
   <path class="cls-13" d="M352.3,54.02c-10,17-12,22-12,30,0,6.63,5.37,12,12,12s12-5.37,12-12C364.3,76.02,361.3,70.02,352.3,54.02Z"/>
+  <a href="/internos/fase-menstrual/" aria-label="Fase menstrual">
   <g class="cls-5">
     <text class="cls-4" transform="translate(291.33 124.64)"><tspan x="0" y="0">M</tspan></text>
     <text class="cls-4" transform="translate(310.26 124.64)"><tspan x="0" y="0">e</tspan></text>
@@ -137,7 +146,9 @@
     <text class="cls-4" transform="translate(382.73 124.64)"><tspan x="0" y="0">c</tspan></text>
     <text class="cls-4" transform="translate(394.05 124.64)"><tspan x="0" y="0">ión</tspan></text>
   </g>
+  </a>
   <path class="cls-14" d="M100.73,233.96q16.89,9.5,9.5,31.67Q93.34,256.13,100.73,233.96M110.55,265.49q11.62-17.94,29.03-4.75Q127.44,273.94,110.55,265.49M110.61,265.75c-4.83,6.14-5.45,13.46-4.66,21.16"/>
+  <a href="/internos/fase-folicular/" aria-label="Fase folicular">
   <g class="cls-5">
     <text class="cls-1" transform="translate(85.3 314.78)"><tspan x="0" y="0">F</tspan></text>
     <text class="cls-6" transform="translate(96.7 314.78)"><tspan x="0" y="0">a</tspan></text>
@@ -150,7 +161,9 @@
     <text class="cls-6" transform="translate(134.9 339.98)"><tspan x="0" y="0">l</tspan></text>
     <text class="cls-6" transform="translate(139.75 339.98)"><tspan x="0" y="0">ar</tspan></text>
   </g>
+  </a>
   <path class="cls-15" d="M597.08,241.24q0,24,21,26-21,2-21,26-2-24-23-26Q595.08,265.24,597.08,241.24Z"/>
+  <a href="/internos/ovulacion/" aria-label="Ovulación">
   <g class="cls-5">
     <text class="cls-9" transform="translate(548.1 319.73)"><tspan x="0" y="0">O</tspan></text>
     <text class="cls-6" transform="translate(564.19 319.73)"><tspan x="0" y="0">v</tspan></text>
@@ -160,7 +173,9 @@
     <text class="cls-6" transform="translate(601.82 319.73)"><tspan x="0" y="0">c</tspan></text>
     <text class="cls-6" transform="translate(612.61 319.73)"><tspan x="0" y="0">ión</tspan></text>
   </g>
+  </a>
   <path class="cls-12" d="M351.07,469.53c-11.51,3.88-17.69,16.37-13.8,27.88,3.88,11.51,16.37,17.69,27.88,13.8,5.01-1.69,9.24-5.13,11.92-9.68-10.23,5.46-22.95,1.6-28.42-8.63C344.62,485.35,345.57,476.1,351.07,469.53Z"/>
+  <a href="/internos/fase-lutea/" aria-label="Fase lútea">
   <g class="cls-5">
     <text class="cls-1" transform="translate(333.92 542.08)"><tspan x="0" y="0">F</tspan></text>
     <text class="cls-6" transform="translate(345.32 542.08)"><tspan x="0" y="0">a</tspan></text>
@@ -171,4 +186,5 @@
     <text class="cls-6" transform="translate(350.82 567.28)"><tspan x="0" y="0">t</tspan></text>
     <text class="cls-6" transform="translate(357.38 567.28)"><tspan x="0" y="0">ea</tspan></text>
   </g>
+  </a>
 </svg>
