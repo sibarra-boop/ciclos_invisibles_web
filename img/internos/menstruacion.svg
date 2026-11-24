@@ -82,7 +82,7 @@
       }
 
       .cls-4 {
-        font-family: AcuminPro-Bold, 'Acumin Pro';
+        font-family: 'acumin-pro';
         font-weight: 700;
       }
 
@@ -96,7 +96,7 @@
       }
 
       .cls-5 {
-        font-family: AcuminPro-Regular, 'Acumin Pro';
+        font-family: 'acumin-pro';
       }
 
       .cls-16 {

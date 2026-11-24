@@ -1,35 +1,9 @@
-@font-face {
-  font-family: "Adobe Jenson Pro";
-  src: local("Adobe Jenson Pro"), local("Jenson Pro"), local("Baskerville"), local("Times New Roman");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Adobe Jenson Pro";
-  src: local("Adobe Jenson Pro"), local("Jenson Pro"), local("Baskerville"), local("Times New Roman");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Acumin Pro";
-  src: local("Acumin Pro"), local("Avenir Next"), local("Segoe UI"), local("Helvetica Neue"), sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Acumin Pro";
-  src: local("Acumin Pro"), local("Avenir Next"), local("Segoe UI"), local("Helvetica Neue"), sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
+@import url("https://use.typekit.net/zvk5xpm.css");
 
 :root {
-  --font-display: "Adobe Jenson Pro", serif;
-  --font-body: "Acumin Pro", sans-serif;
-  --font-body-bold: "Acumin Pro", bold, sans-serif;
+  --font-display: "adobe-jenson-pro", serif;
+  --font-body: "acumin-pro", sans-serif;
+  --font-body-bold: "acumin-pro", bold, sans-serif;
  
   --verde: #354d34;
   --orange: #f16437;

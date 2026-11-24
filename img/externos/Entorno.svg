@@ -112,7 +112,7 @@
 
       .cls-4 {
         fill: #f8f0e8;
-        font-family: AcuminPro-Regular, 'Acumin Pro';
+        font-family: 'acumin-pro';
         font-size: 18px;
       }
 

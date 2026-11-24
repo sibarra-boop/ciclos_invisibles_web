@@ -120,7 +120,7 @@
 
       .cls-10 {
         fill: #f7f0e6;
-        font-family: AcuminPro-Regular, 'Acumin Pro';
+        font-family: 'acumin-pro';
         font-size: 18px;
       }
 

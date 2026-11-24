@@ -3,7 +3,7 @@
   <defs>
     <style>
       .cls-1 {
-        font-family: AcuminPro-Bold, 'Acumin Pro';
+        font-family: 'acumin-pro';
         font-size: 22px;
         font-weight: 700;
       }
@@ -274,7 +274,7 @@
       }
 
       .cls-4 {
-        font-family: AcuminPro-Regular, 'Acumin Pro';
+        font-family: 'acumin-pro';
         font-size: 20px;
       }
     </style>

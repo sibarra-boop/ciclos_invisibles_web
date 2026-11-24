@@ -44,7 +44,7 @@
       }
 
       .cls-13 {
-        font-family: AcuminPro-Bold, 'Acumin Pro';
+        font-family: 'acumin-pro';
         font-size: 18px;
         font-weight: 700;
       }
@@ -59,7 +59,7 @@
       }
 
       .cls-14 {
-        font-family: AcuminPro-Regular, 'Acumin Pro';
+        font-family: 'acumin-pro';
         font-size: 16px;
       }
 

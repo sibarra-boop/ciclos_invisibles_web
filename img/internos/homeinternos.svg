@@ -12,7 +12,7 @@
 
       .cls-1, .cls-4, .cls-6, .cls-9 {
         fill: #f8f1e8;
-        font-family: AcuminPro-Regular, 'Acumin Pro';
+        font-family: 'acumin-pro';
       }
 
       .cls-1, .cls-6, .cls-9 {

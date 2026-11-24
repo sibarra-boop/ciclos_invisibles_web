@@ -104,7 +104,7 @@
 
       .cls-13, .cls-15, .cls-16, .cls-17, .cls-18 {
         fill: #f8f1e8;
-        font-family: AcuminPro-Regular, 'Acumin Pro';
+        font-family: 'acumin-pro';
         font-size: 18px;
       }
 
