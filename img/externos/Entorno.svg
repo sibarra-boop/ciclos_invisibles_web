@@ -2,6 +2,12 @@
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 760.08 540.86">
   <defs>
     <style>
+    @font-face { 
+        font-family: 'Ciclos';
+        src: url('../fonts/Ciclos.woff2') format('woff2'),
+             url('../fonts/Ciclos.ttf') format('truetype');
+      }
+
       .cls-1 {
         fill: #e8b7f4;
       }
@@ -112,7 +118,7 @@
 
       .cls-4 {
         fill: #f8f0e8;
-        font-family: 'acumin-pro';
+        font-family: 'Ciclos';
         font-size: 18px;
       }
 

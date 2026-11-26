@@ -1,7 +1,7 @@
 @import url("https://use.typekit.net/zvk5xpm.css");
 
 :root {
-  --font-display: "adobe-jenson-pro", serif;
+  --font-display: "Ciclos", serif;
   --font-body: "acumin-pro", sans-serif;
   --font-body-bold: "acumin-pro", bold, sans-serif;
  
@@ -11,6 +11,12 @@
   --cream: #f6f3ec;
   --lime: #e6e878;
   --lavender: #aeaad9;
+}
+
+@font-face {
+  font-family: "Ciclos";
+  src: url(../fonts/Ciclos.ttf) format("truetype");
+  src: url(../fonts/Ciclos.woff2) format("woff2");
 }
 
 * { box-sizing: border-box; }

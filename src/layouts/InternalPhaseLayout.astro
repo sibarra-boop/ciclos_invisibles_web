@@ -71,7 +71,8 @@ const cyclePhases = [
         </article>
       </div>
 
-      <a class="ovulation__explore" href="#cycle-phases">
+      <a class="ovulation__explore" href="/">
+        <img class="ovulation__explore-graphic" src={topic.exploreImage} alt="" aria-hidden="true" />
         <span>Explora<br />más relaciones</span>
         <span class="ovulation__arrow" aria-hidden="true">→</span>
       </a>
@@ -84,7 +85,7 @@ const cyclePhases = [
           <li class:list={["cycle__phase", { "cycle__phase--current": phase.slug === topic.slug }]}>
             <a href={phase.href} aria-current={phase.slug === topic.slug ? "page" : undefined}>
               <span class="cycle__dot" aria-hidden="true"></span>
-              <span>{phase.displayTitle ?? phase.title}</span>
+              <span class="cycle__label">{phase.displayTitle ?? phase.title}</span>
             </a>
           </li>
         ))}

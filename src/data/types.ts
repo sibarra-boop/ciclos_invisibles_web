@@ -15,6 +15,7 @@ export interface TopicContent extends TopicRoute {
 
 export interface InternalPhaseContent extends TopicContent {
   displayTitle?: string;
+  exploreImage: string;
   feelings: string[];
   influence: string;
   phrases: string[];

@@ -2,6 +2,13 @@
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 668.43 422">
   <defs>
     <style>
+
+    @font-face {
+        font-family: 'Ciclos';
+        src: url('../fonts/Ciclos.woff2') format('woff2'),
+             url('../fonts/Ciclos.ttf') format('truetype');
+      }
+
       .cls-1 {
         fill: url(#radial-gradient);
         opacity: .23;
@@ -82,7 +89,7 @@
       }
 
       .cls-4 {
-        font-family: 'acumin-pro';
+        font-family: 'Ciclos';
         font-weight: 700;
       }
 
@@ -96,7 +103,7 @@
       }
 
       .cls-5 {
-        font-family: 'acumin-pro';
+        font-family: 'Ciclos';
       }
 
       .cls-16 {

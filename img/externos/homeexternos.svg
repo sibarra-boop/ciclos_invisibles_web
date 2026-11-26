@@ -2,6 +2,12 @@
   <title id="diagram-title">Diagrama interactivo de los factores externos</title>
   <defs>
     <style>
+      @font-face { 
+        font-family: 'Ciclos';
+        src: url('../fonts/Ciclos.woff2') format('woff2'),
+             url('../fonts/Ciclos.ttf') format('truetype');
+      }
+
       .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
         fill: none;
       }
@@ -19,7 +25,7 @@
       }
 
       .cls-7, .cls-9, .cls-20 {
-        font-family: 'acumin-pro';
+        font-family: 'Ciclos';
         font-size: 23px;
         font-style: italic;
       }
@@ -29,7 +35,7 @@
       }
 
       .cls-8, .cls-10, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-19 {
-        font-family: 'acumin-pro';
+        font-family: 'Ciclos';
       }
 
       .cls-8, .cls-19 {

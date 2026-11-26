@@ -35,14 +35,54 @@
 }
 
 .internos-home__graphic {
+  position: relative;
   width: min(100%, 585px);
   margin: 0 auto;
 }
 
-.internos-home__graphic svg {
+.internos-home__graphic img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.internos-home__phase-link {
+  position: absolute;
+  z-index: 1;
+}
+
+.internos-home__phase-link:focus-visible {
+  outline: 2px solid var(--cream);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.internos-home__phase-link--menstrual {
+  top: 16%;
+  left: 40%;
+  width: 19%;
+  height: 6%;
+}
+
+.internos-home__phase-link--folicular {
+  top: 46%;
+  left: 11%;
+  width: 13%;
+  height: 10%;
+}
+
+.internos-home__phase-link--ovulacion {
+  top: 46%;
+  left: 77%;
+  width: 17%;
+  height: 6%;
+}
+
+.internos-home__phase-link--lutea {
+  top: 81%;
+  left: 46%;
+  width: 13%;
+  height: 10%;
 }
 
 @media (max-width: 920px) {

@@ -2,6 +2,13 @@
   <title id="ovulation-diagram-title">Diagrama de la ovulación, sus cambios hormonales y la liberación del óvulo</title>
   <defs>
     <style>
+
+    @font-face {
+        font-family: 'Ciclos';
+        src: url('../fonts/Ciclos.woff2') format('woff2'),
+             url('../fonts/Ciclos.ttf') format('truetype');
+      }
+
       .cls-1 {
         stroke: #ede9da;
         stroke-width: 1.1px;
@@ -31,7 +38,7 @@
 
       .cls-11, .cls-12 {
         fill: #f7f1e9;
-        font-family: 'acumin-pro';
+        font-family: 'Ciclos';
         font-size: 16px;
       }
 

@@ -196,27 +196,15 @@ body.cycle-phase-page .site-header__brand {
   text-decoration: none;
 }
 
-.ovulation__explore::before,
-.ovulation__explore::after {
+.ovulation__explore-graphic {
   position: absolute;
   z-index: -1;
+  top: 50%;
+  left: 50%;
   width: 82%;
   height: 76%;
-  border-radius: 53% 47% 42% 58% / 49% 38% 62% 51%;
-  content: "";
-}
-
-.ovulation__explore::before {
-  background: var(--lime);
-  transform: rotate(12deg);
-}
-
-.ovulation__explore::after {
-  top: 43%;
-  left: 3%;
-  background: var(--lime);
-  opacity: 0.45;
-  transform: rotate(-12deg);
+  object-fit: fill;
+  transform: translate(-50%, -50%);
 }
 
 .ovulation__explore:hover,
@@ -262,6 +250,7 @@ body.cycle-phase-page .site-header__brand {
   left: 12.5%;
   height: 1px;
   background: var(--ovulation-line);
+  pointer-events: none;
   content: "";
 }
 
@@ -272,44 +261,44 @@ body.cycle-phase-page .site-header__brand {
 }
 
 .cycle__phase a {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 7px;
+  width: 100%;
+  min-height: 48px;
   color: var(--ovulation-cream);
   font-size: 0.76rem;
   text-decoration: none;
 }
 
 .cycle__dot {
+  --cycle-dot-color: var(--peach);
+
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: var(--peach);
+  background: var(--cycle-dot-color);
   box-shadow:
-    0 0 0 6px color-mix(in srgb, var(--peach) 14%, transparent),
-    0 0 14px 5px color-mix(in srgb, var(--peach) 60%, transparent);
+    0 0 0 6px color-mix(in srgb, var(--cycle-dot-color) 14%, transparent),
+    0 0 14px 5px color-mix(in srgb, var(--cycle-dot-color) 60%, transparent);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    filter 180ms ease;
 }
 
 .cycle__phase:nth-child(2) .cycle__dot {
-  background: var(--lime);
-  box-shadow:
-    0 0 0 6px color-mix(in srgb, var(--lime) 14%, transparent),
-    0 0 14px 5px color-mix(in srgb, var(--lime) 60%, transparent);
+  --cycle-dot-color: var(--lime);
 }
 
 .cycle__phase:nth-child(3) .cycle__dot {
-  background: var(--cream);
-  box-shadow:
-    0 0 0 6px color-mix(in srgb, var(--cream) 14%, transparent),
-    0 0 14px 5px color-mix(in srgb, var(--cream) 60%, transparent);
+  --cycle-dot-color: var(--cream);
 }
 
 .cycle__phase:nth-child(4) .cycle__dot {
-  background: var(--lavender);
-  box-shadow:
-    0 0 0 6px color-mix(in srgb, var(--lavender) 14%, transparent),
-    0 0 14px 5px color-mix(in srgb, var(--lavender) 60%, transparent);
+  --cycle-dot-color: var(--lavender);
 }
 
 .cycle__phase--current .cycle__dot {
@@ -320,6 +309,25 @@ body.cycle-phase-page .site-header__brand {
 .cycle__phase a:hover,
 .cycle__phase a:focus-visible {
   color: var(--lime);
+}
+
+.cycle__label {
+  display: block;
+  transition: transform 180ms ease;
+}
+
+.cycle__phase a:hover .cycle__dot,
+.cycle__phase a:focus-visible .cycle__dot {
+  transform: scale(1.5);
+  filter: brightness(1.12);
+  box-shadow:
+    0 0 0 8px color-mix(in srgb, var(--cycle-dot-color) 24%, transparent),
+    0 0 20px 8px color-mix(in srgb, var(--cycle-dot-color) 78%, transparent);
+}
+
+.cycle__phase a:hover .cycle__label,
+.cycle__phase a:focus-visible .cycle__label {
+  transform: translateY(8px);
 }
 
 @media (max-width: 1050px) {
@@ -355,8 +363,7 @@ body.cycle-phase-page .site-header__brand {
     min-height: 120px;
   }
 
-  .ovulation__explore::before,
-  .ovulation__explore::after {
+  .ovulation__explore-graphic {
     width: 180px;
     height: 115px;
   }

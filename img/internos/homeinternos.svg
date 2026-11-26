@@ -2,6 +2,12 @@
   <title id="diagram-title">Diagrama interactivo de las cuatro fases del ciclo menstrual</title>
   <defs>
     <style>
+    @font-face {
+        font-family: Ciclos';
+        src: url('../fonts/Ciclos.woff2') format('woff2'),
+             url('../fonts/Ciclos.ttf') format('truetype');
+      }
+
       .cls-1 {
         letter-spacing: -.02em;
       }
@@ -12,7 +18,7 @@
 
       .cls-1, .cls-4, .cls-6, .cls-9 {
         fill: #f8f1e8;
-        font-family: 'acumin-pro';
+        font-family: 'Ciclos';
       }
 
       .cls-1, .cls-6, .cls-9 {

@@ -2,6 +2,13 @@
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 706.52 429.42">
   <defs>
     <style>
+
+    @font-face {
+        font-family: 'Ciclos';
+        src: url('../fonts/Ciclos.woff2') format('woff2'),
+             url('../fonts/Ciclos.ttf') format('truetype');
+      }
+
       .cls-1 {
         letter-spacing: 0em;
       }
@@ -15,7 +22,7 @@
       }
 
       .cls-1, .cls-2, .cls-3, .cls-6, .cls-7, .cls-18 {
-        font-family: 'acumin-pro';
+        font-family: 'Ciclos';
         font-weight: 700;
       }
 
@@ -54,7 +61,7 @@
       }
 
       .cls-5, .cls-8, .cls-16, .cls-17, .cls-19, .cls-20, .cls-22 {
-        font-family: 'acumin-pro';
+        font-family: 'Ciclos';
       }
 
       .cls-5, .cls-16, .cls-17 {

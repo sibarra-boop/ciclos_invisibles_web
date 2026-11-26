@@ -1,3 +1,70 @@
+.externos-home__graphic {
+  position: relative;
+  width: min(100%, 680px);
+  margin: 0 auto;
+}
+
+.externos-home__graphic img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.externos-home__topic-link {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.externos-home__topic-link:focus-visible {
+  outline: 2px solid var(--cream);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.externos-home__topic-link--tabues {
+  top: 8%;
+  left: 12%;
+  width: 10%;
+  height: 6%;
+}
+
+.externos-home__topic-link--sueno {
+  top: 8%;
+  left: 80%;
+  width: 10%;
+  height: 6%;
+}
+
+.externos-home__topic-link--estres {
+  top: 44%;
+  left: 92%;
+  width: 8%;
+  height: 7%;
+}
+
+.externos-home__topic-link--autopercepcion {
+  top: 84%;
+  left: 80%;
+  width: 17%;
+  height: 8%;
+}
+
+.externos-home__topic-link--entorno {
+  top: 84%;
+  left: 11%;
+  width: 10%;
+  height: 8%;
+}
+
+.externos-home__topic-link--informacion {
+  top: 44%;
+  left: 0;
+  width: 12%;
+  height: 7%;
+}
+
 .externos-home .topic-home__hero h1 {
   max-width: 230px;
 }
