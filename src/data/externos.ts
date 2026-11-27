@@ -16,7 +16,7 @@ export const externos: Record<string, TopicContent> = {
     href: "/externos/entorno/",
     section: "externos",
     description: "El trabajo, el tiempo disponible y las condiciones de vida influyen en cómo percibimos y atendemos las señales del cuerpo.",
-    image: "/img/externos/Entorno.svg",
+    image: "/img/externos/entorno.svg",
     imageAlt: "Ilustración sobre el entorno",
   },
   estres: {

@@ -3,14 +3,8 @@
   <defs>
     <style>
 
-    @font-face {
-        font-family: 'Ciclos';
-        src: url('../fonts/Ciclos.woff2') format('woff2'),
-             url('../fonts/Ciclos.ttf') format('truetype');
-      }
-
       .cls-1 {
-        font-family: 'acumin-pro';
+        font-family: Arial, sans-serif;
         font-size: 22px;
         font-weight: 700;
       }
@@ -20,15 +14,15 @@
       }
 
       .cls-1, .cls-4 {
-        fill: #fff2e8;
+        fill: #f6f3ec;
       }
 
       .cls-5 {
-        fill: #ffa3a5;
+        fill: #e6e878;
       }
 
       .cls-6 {
-        fill: #e0b9ed;
+        fill: #f6f3ec;
       }
 
       .cls-7 {
@@ -64,7 +58,7 @@
       }
 
       .cls-15 {
-        fill: #fff2a5;
+        fill: #fbdfd0;
       }
 
       .cls-16 {
@@ -72,7 +66,7 @@
       }
 
       .cls-17 {
-        fill: #ff9b9e;
+        fill: #aeaad9;
       }
 
       .cls-18 {
@@ -85,7 +79,7 @@
 
       .cls-2 {
         opacity: .6;
-        stroke: #fff2e8;
+        stroke: #f6f3ec;
         stroke-dasharray: 2 5;
       }
 
@@ -116,7 +110,7 @@
       .cls-3 {
         fill: none;
         opacity: .96;
-        stroke: #fff3e5;
+        stroke: #f6f3ec;
         stroke-width: 1.65px;
       }
 
@@ -281,42 +275,50 @@
       }
 
       .cls-4 {
-        font-family: 'Ciclos';
+        font-family: Arial, sans-serif;
         font-size: 20px;
       }
     </style>
     <radialGradient id="radial-gradient" cx="-2377.5" cy="-1682.39" fx="-2377.5" fy="-1682.39" r=".5" gradientTransform="translate(710862.768 -575667.1004) scale(298.9315 -342.3265)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#a9ba74" stop-opacity=".37"/>
-      <stop offset="1" stop-color="#a9ba74" stop-opacity=".1"/>
+      <stop offset="0" stop-color="#fbdfd0" stop-opacity=".37"/>
+      <stop offset="1" stop-color="#fbdfd0" stop-opacity=".1"/>
     </radialGradient>
     <radialGradient id="radial-gradient-2" cx="-2378.88" cy="-1681.23" fx="-2378.88" fy="-1681.23" r=".5" gradientTransform="translate(901212.3361 -696428.5183) scale(378.6709 -414.3771)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#e39b91" stop-opacity=".42"/>
-      <stop offset="1" stop-color="#e39b91" stop-opacity=".16"/>
+      <stop offset="0" stop-color="#e6e878" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#e6e878" stop-opacity=".16"/>
     </radialGradient>
     <radialGradient id="radial-gradient-3" cx="-2377.88" cy="-1682.05" fx="-2377.88" fy="-1682.05" r=".5" gradientTransform="translate(754443.7488 -606335.3518) scale(317.002 -360.6367)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#aa8ac4" stop-opacity=".42"/>
-      <stop offset="1" stop-color="#aa8ac4" stop-opacity=".13"/>
+      <stop offset="0" stop-color="#f6f3ec" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#f6f3ec" stop-opacity=".13"/>
     </radialGradient>
-    <radialGradient id="radial-gradient-4" cx="-2378.09" cy="-1681.49" fx="-2378.09" fy="-1681.49" r=".5" gradientTransform="translate(781915.1903 -664763.084) scale(328.4255 -395.4857)" xlink:href="#radial-gradient-2"/>
+    <radialGradient id="radial-gradient-4" cx="-2378.09" cy="-1681.49" fx="-2378.09" fy="-1681.49" r=".5" gradientTransform="translate(781915.1903 -664763.084) scale(328.4255 -395.4857)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#aeaad9" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#aeaad9" stop-opacity=".16"/>
+    </radialGradient>
     <radialGradient id="radial-gradient-5" cx="-2373.16" cy="-1688.39" fx="-2373.16" fy="-1688.39" r=".5" gradientTransform="translate(427316.8425 -303753.6228) scale(180 -180)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#fff7a0" stop-opacity=".96"/>
-      <stop offset=".16" stop-color="#eced8c" stop-opacity=".75"/>
-      <stop offset=".47" stop-color="#d7e46d" stop-opacity=".23"/>
-      <stop offset="1" stop-color="#e5ee8d" stop-opacity="0"/>
+      <stop offset="0" stop-color="#fbdfd0" stop-opacity=".96"/>
+      <stop offset=".16" stop-color="#fbdfd0" stop-opacity=".75"/>
+      <stop offset=".47" stop-color="#fbdfd0" stop-opacity=".23"/>
+      <stop offset="1" stop-color="#fbdfd0" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="radial-gradient-6" cx="-2373.16" cy="-1688.39" fx="-2373.16" fy="-1688.39" r=".5" gradientTransform="translate(427565.8425 -303819.6228) scale(180 -180)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#ffd5d3" stop-opacity=".94"/>
-      <stop offset=".18" stop-color="#ff9d9d" stop-opacity=".62"/>
-      <stop offset=".53" stop-color="#e98689" stop-opacity=".2"/>
-      <stop offset="1" stop-color="#e98689" stop-opacity="0"/>
+      <stop offset="0" stop-color="#e6e878" stop-opacity=".94"/>
+      <stop offset=".18" stop-color="#e6e878" stop-opacity=".62"/>
+      <stop offset=".53" stop-color="#e6e878" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#e6e878" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="radial-gradient-7" cx="-2373.16" cy="-1688.39" fx="-2373.16" fy="-1688.39" r=".5" gradientTransform="translate(427817.8425 -303746.6228) scale(180 -180)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#f2c6ff" stop-opacity=".92"/>
-      <stop offset=".2" stop-color="#c89adf" stop-opacity=".67"/>
-      <stop offset=".53" stop-color="#b5a1da" stop-opacity=".21"/>
-      <stop offset="1" stop-color="#b5a1da" stop-opacity="0"/>
+      <stop offset="0" stop-color="#f6f3ec" stop-opacity=".92"/>
+      <stop offset=".2" stop-color="#f6f3ec" stop-opacity=".67"/>
+      <stop offset=".53" stop-color="#f6f3ec" stop-opacity=".21"/>
+      <stop offset="1" stop-color="#f6f3ec" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="radial-gradient-8" cx="-2373.16" cy="-1688.39" fx="-2373.16" fy="-1688.39" gradientTransform="translate(428055.8425 -303791.6228) scale(180 -180)" xlink:href="#radial-gradient-6"/>
+    <radialGradient id="radial-gradient-8" cx="-2373.16" cy="-1688.39" fx="-2373.16" fy="-1688.39" r=".5" gradientTransform="translate(428055.8425 -303791.6228) scale(180 -180)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#aeaad9" stop-opacity=".94"/>
+      <stop offset=".18" stop-color="#aeaad9" stop-opacity=".62"/>
+      <stop offset=".53" stop-color="#aeaad9" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#aeaad9" stop-opacity="0"/>
+    </radialGradient>
   </defs>
   <path id="forma-folicular" class="cls-14" d="M3.68,222c13-84,87-144,155-133,76,4,128,69,143,166,8,81-36,150-114,171C97.68,448,7.68,377,3.68,282V222Z"/>
   <path id="forma-ovulacion" class="cls-13" d="M209.68,215c20-101,96-187,186-187,104-1,162,97,187,206,24,106-48,202-168,208C287.68,449,197.68,358,209.68,215Z"/>
@@ -332,37 +334,37 @@
   <circle class="cls-6" cx="649.68" cy="163" r="8"/>
   <circle class="cls-17" cx="887.68" cy="118" r="8"/>
   <g id="texto-fase-568">
-    <text class="cls-1" transform="translate(119.61 215)"><tspan class="cls-52" x="0" y="0">F</tspan><tspan class="cls-47" x="14.45" y="0">a</tspan><tspan class="cls-50" x="28.53" y="0">s</tspan><tspan class="cls-39" x="41.95" y="0">e</tspan></text>
-    <text class="cls-1" transform="translate(93.84 240)"><tspan class="cls-39" x="0" y="0">Foli</tspan><tspan class="cls-46" x="45.58" y="0">c</tspan><tspan class="cls-39" x="59.33" y="0">u</tspan><tspan class="cls-46" x="74.18" y="0">l</tspan><tspan class="cls-39" x="82.06" y="0">ar</tspan></text>
-    <text class="cls-4" transform="translate(85.68 286)"><tspan class="cls-34" x="0" y="0">S</tspan><tspan x="11.96" y="0">u</tspan><tspan class="cls-19" x="23.1" y="0">e</tspan><tspan class="cls-20" x="33.62" y="0">le </tspan><tspan class="cls-26" x="53.88" y="0">h</tspan><tspan x="65.08" y="0">a</tspan><tspan class="cls-56" x="75.66" y="0">b</tspan><tspan x="87.2" y="0">er</tspan></text>
-    <text class="cls-4" transform="translate(85.68 312)"><tspan class="cls-25" x="0" y="0">m</tspan><tspan class="cls-35" x="16.8" y="0">á</tspan><tspan class="cls-16" x="27.24" y="0">s ene</tspan><tspan class="cls-31" x="74" y="0">r</tspan><tspan x="80.8" y="0">g</tspan><tspan class="cls-24" x="92.14" y="0">í</tspan><tspan x="96.76" y="0">a y</tspan></text>
-    <text class="cls-4" transform="translate(85.68 338)"><tspan x="0" y="0">un </tspan><tspan class="cls-32" x="27.52" y="0">s</tspan><tspan class="cls-20" x="36.78" y="0">ueño </tspan><tspan class="cls-25" x="85.76" y="0">m</tspan><tspan class="cls-37" x="102.56" y="0">á</tspan><tspan x="113" y="0">s</tspan></text>
-    <text class="cls-4" transform="translate(85.68 364)"><tspan class="cls-63" x="0" y="0">e</tspan><tspan class="cls-30" x="10.62" y="0">s</tspan><tspan x="20" y="0">tabl</tspan><tspan class="cls-56" x="53.12" y="0">e</tspan><tspan x="63.7" y="0">.</tspan></text>
+    <text class="cls-1" text-anchor="middle" x="148.68" y="215">Fase</text>
+    <text class="cls-1" text-anchor="middle" x="148.68" y="240">Folicular</text>
+    <text class="cls-4" x="85.68" y="286">Suele haber</text>
+    <text class="cls-4" x="85.68" y="312">más energía y</text>
+    <text class="cls-4" x="85.68" y="338">un sueño más</text>
+    <text class="cls-4" x="85.68" y="364">estable.</text>
   </g>
   <g id="texto-fase-817">
-    <text class="cls-1" transform="translate(335.51 216)"><tspan class="cls-40" x="0" y="0">O</tspan><tspan class="cls-42" x="19.01" y="0">v</tspan><tspan class="cls-39" x="32.34" y="0">u</tspan><tspan class="cls-46" x="47.19" y="0">l</tspan><tspan class="cls-44" x="55.07" y="0">a</tspan><tspan class="cls-39" x="69.28" y="0">ción</tspan></text>
-    <text class="cls-4" transform="translate(334.68 286)"><tspan class="cls-23" x="0" y="0">P</tspan><tspan x="12.2" y="0">u</tspan><tspan class="cls-56" x="23.34" y="0">e</tspan><tspan x="33.92" y="0">de </tspan><tspan class="cls-19" x="60.86" y="0">s</tspan><tspan x="70.38" y="0">er </tspan><tspan class="cls-25" x="92.94" y="0">m</tspan><tspan class="cls-35" x="109.74" y="0">á</tspan><tspan class="cls-16" x="120.18" y="0">s</tspan></text>
-    <text class="cls-4" transform="translate(334.68 312)"><tspan x="0" y="0">lige</tspan><tspan class="cls-36" x="31.28" y="0">r</tspan><tspan class="cls-16" x="38.16" y="0">o o </tspan><tspan class="cls-59" x="70.28" y="0">c</tspan><tspan class="cls-16" x="80.5" y="0">on</tspan></text>
-    <text class="cls-4" transform="translate(334.68 338)"><tspan class="cls-25" x="0" y="0">ma</tspan><tspan x="27.26" y="0">yor </tspan><tspan class="cls-34" x="59.98" y="0">f</tspan><tspan x="65.48" y="0">a</tspan><tspan class="cls-63" x="76.06" y="0">c</tspan><tspan x="86.34" y="0">ili</tspan><tspan class="cls-25" x="100.56" y="0">d</tspan><tspan x="111.86" y="0">ad</tspan></text>
-    <text class="cls-4" transform="translate(334.68 364)"><tspan x="0" y="0">pa</tspan><tspan class="cls-22" x="21.98" y="0">r</tspan><tspan class="cls-16" x="28.68" y="0">a d</tspan><tspan class="cls-63" x="55.74" y="0">e</tspan><tspan class="cls-27" x="66.36" y="0">s</tspan><tspan class="cls-56" x="75.72" y="0">p</tspan><tspan x="87.24" y="0">e</tspan><tspan class="cls-54" x="97.7" y="0">r</tspan><tspan x="105.28" y="0">ta</tspan><tspan class="cls-21" x="122.24" y="0">r</tspan><tspan class="cls-20" x="128.1" y="0">.</tspan></text>
+    <text class="cls-1" text-anchor="middle" x="397.68" y="216">Ovulación</text>
+    <text class="cls-4" x="334.68" y="286">Puede ser más</text>
+    <text class="cls-4" x="334.68" y="312">ligero o con</text>
+    <text class="cls-4" x="334.68" y="338">mayor facilidad</text>
+    <text class="cls-4" x="334.68" y="364">para despertar.</text>
   </g>
   <g id="texto-fase-1069">
-    <text class="cls-1" transform="translate(620.61 215)"><tspan class="cls-52" x="0" y="0">F</tspan><tspan class="cls-47" x="14.45" y="0">a</tspan><tspan class="cls-50" x="28.53" y="0">s</tspan><tspan class="cls-39" x="41.95" y="0">e</tspan></text>
-    <text class="cls-1" transform="translate(615.35 240)"><tspan class="cls-49" x="0" y="0">L</tspan><tspan class="cls-41" x="14.72" y="0">ú</tspan><tspan class="cls-48" x="29.74" y="0">t</tspan><tspan class="cls-39" x="39.49" y="0">ea</tspan></text>
-    <text class="cls-4" transform="translate(586.68 286)"><tspan class="cls-58" x="0" y="0">E</tspan><tspan x="12.04" y="0">s </tspan><tspan class="cls-59" x="26.56" y="0">c</tspan><tspan x="36.78" y="0">o</tspan><tspan class="cls-27" x="47.78" y="0">m</tspan><tspan x="64.6" y="0">ún </tspan><tspan class="cls-19" x="92.12" y="0">s</tspan><tspan x="101.64" y="0">e</tspan><tspan class="cls-26" x="112.1" y="0">n</tspan><tspan class="cls-30" x="123.3" y="0">t</tspan><tspan x="129.6" y="0">ir</tspan></text>
-    <text class="cls-4" transform="translate(586.68 312)"><tspan class="cls-25" x="0" y="0">m</tspan><tspan class="cls-35" x="16.8" y="0">á</tspan><tspan class="cls-16" x="27.24" y="0">s ca</tspan><tspan class="cls-28" x="62.46" y="0">n</tspan><tspan class="cls-60" x="73.68" y="0">s</tspan><tspan class="cls-20" x="83.22" y="0">an</tspan><tspan class="cls-63" x="105.12" y="0">c</tspan><tspan x="115.4" y="0">io</tspan></text>
-    <text class="cls-4" transform="translate(586.68 338)"><tspan x="0" y="0">y n</tspan><tspan class="cls-57" x="26" y="0">e</tspan><tspan class="cls-59" x="36.58" y="0">c</tspan><tspan class="cls-65" x="46.8" y="0">e</tspan><tspan x="57.42" y="0">s</tspan><tspan class="cls-61" x="66.88" y="0">i</tspan><tspan class="cls-16" x="71.7" y="0">tar</tspan></text>
-    <text class="cls-4" transform="translate(586.68 364)"><tspan class="cls-25" x="0" y="0">m</tspan><tspan class="cls-35" x="16.8" y="0">á</tspan><tspan class="cls-16" x="27.24" y="0">s d</tspan><tspan class="cls-63" x="53.18" y="0">e</tspan><tspan class="cls-18" x="63.8" y="0">s</tspan><tspan class="cls-16" x="73.32" y="0">ca</tspan><tspan class="cls-27" x="94.02" y="0">n</tspan><tspan class="cls-18" x="105.24" y="0">s</tspan><tspan class="cls-28" x="114.76" y="0">o</tspan><tspan x="125.66" y="0">.</tspan></text>
+    <text class="cls-1" text-anchor="middle" x="649.68" y="215">Fase</text>
+    <text class="cls-1" text-anchor="middle" x="649.68" y="240">Lútea</text>
+    <text class="cls-4" x="586.68" y="286">Es común sentir</text>
+    <text class="cls-4" x="586.68" y="312">más cansancio</text>
+    <text class="cls-4" x="586.68" y="338">y necesitar</text>
+    <text class="cls-4" x="586.68" y="364">más descanso.</text>
   </g>
   <g id="texto-fase-1307">
-    <text class="cls-1" transform="translate(857.17 181.84)"><tspan class="cls-52" x="0" y="0">F</tspan><tspan class="cls-47" x="14.45" y="0">a</tspan><tspan class="cls-50" x="28.53" y="0">s</tspan><tspan class="cls-39" x="41.95" y="0">e</tspan></text>
-    <text class="cls-1" transform="translate(825.29 206.84)"><tspan class="cls-53" x="0" y="0">M</tspan><tspan class="cls-51" x="21.21" y="0">e</tspan><tspan class="cls-47" x="35.46" y="0">n</tspan><tspan class="cls-43" x="50.29" y="0">s</tspan><tspan class="cls-42" x="63.49" y="0">t</tspan><tspan class="cls-45" x="73.35" y="0">r</tspan><tspan class="cls-39" x="83.93" y="0">ual</tspan></text>
-    <text class="cls-4" transform="translate(823.24 252.84)"><tspan class="cls-33" x="0" y="0">E</tspan><tspan x="11.74" y="0">l </tspan><tspan class="cls-33" x="21.54" y="0">s</tspan><tspan x="30.8" y="0">ueño pu</tspan><tspan class="cls-56" x="102.32" y="0">e</tspan><tspan x="112.9" y="0">de</tspan></text>
-    <text class="cls-4" transform="translate(823.24 278.84)"><tspan class="cls-29" x="0" y="0">v</tspan><tspan class="cls-16" x="9.6" y="0">o</tspan><tspan class="cls-60" x="20.6" y="0">l</tspan><tspan class="cls-29" x="25.42" y="0">v</tspan><tspan x="35.02" y="0">er</tspan><tspan class="cls-18" x="52.52" y="0">s</tspan><tspan x="62.04" y="0">e </tspan><tspan class="cls-25" x="77.56" y="0">m</tspan><tspan class="cls-35" x="94.36" y="0">á</tspan><tspan class="cls-16" x="104.8" y="0">s</tspan></text>
-    <text class="cls-4" transform="translate(823.24 304.84)"><tspan x="0" y="0">p</tspan><tspan class="cls-34" x="11.4" y="0">r</tspan><tspan class="cls-57" x="18.28" y="0">o</tspan><tspan x="29.4" y="0">fund</tspan><tspan class="cls-30" x="68.94" y="0">o</tspan><tspan x="79.86" y="0">, </tspan><tspan class="cls-56" x="89.12" y="0">p</tspan><tspan x="100.64" y="0">e</tspan><tspan class="cls-34" x="111.1" y="0">r</tspan><tspan class="cls-16" x="117.98" y="0">o</tspan></text>
-    <text class="cls-4" transform="translate(823.24 330.84)"><tspan x="0" y="0">tam</tspan><tspan class="cls-18" x="33.88" y="0">b</tspan><tspan class="cls-16" x="45.36" y="0">ién </tspan><tspan class="cls-30" x="76.94" y="0">v</tspan><tspan x="86.54" y="0">er</tspan><tspan class="cls-19" x="104.04" y="0">s</tspan><tspan x="113.56" y="0">e</tspan></text>
-    <text class="cls-4" transform="translate(823.24 356.84)"><tspan class="cls-27" x="0" y="0">a</tspan><tspan class="cls-38" x="10.48" y="0">f</tspan><tspan class="cls-57" x="16.08" y="0">e</tspan><tspan class="cls-62" x="26.66" y="0">c</tspan><tspan x="36.98" y="0">tado </tspan><tspan class="cls-57" x="81.42" y="0">p</tspan><tspan class="cls-20" x="92.94" y="0">or</tspan></text>
-    <text class="cls-4" transform="translate(823.24 382.84)"><tspan x="0" y="0">mol</tspan><tspan class="cls-63" x="32.66" y="0">e</tspan><tspan class="cls-30" x="43.28" y="0">st</tspan><tspan class="cls-25" x="58.96" y="0">i</tspan><tspan class="cls-37" x="63.58" y="0">a</tspan><tspan x="74.02" y="0">s </tspan><tspan class="cls-64" x="88.54" y="0">f</tspan><tspan class="cls-28" x="94.34" y="0">í</tspan><tspan x="98.98" y="0">sic</tspan><tspan class="cls-37" x="123.3" y="0">a</tspan><tspan class="cls-55" x="133.74" y="0">s</tspan><tspan class="cls-20" x="143.48" y="0">.</tspan></text>
+    <text class="cls-1" text-anchor="middle" x="887.68" y="181.84">Fase</text>
+    <text class="cls-1" text-anchor="middle" x="887.68" y="206.84">Menstrual</text>
+    <text class="cls-4" x="823.24" y="252.84">El sueño puede</text>
+    <text class="cls-4" x="823.24" y="278.84">volverse más</text>
+    <text class="cls-4" x="823.24" y="304.84">profundo, pero</text>
+    <text class="cls-4" x="823.24" y="330.84">también verse</text>
+    <text class="cls-4" x="823.24" y="356.84">afectado por</text>
+    <text class="cls-4" x="823.24" y="382.84">molestias físicas.</text>
   </g>
   <path class="cls-2" d="M265.68,249v155"/>
   <path class="cls-2" d="M529.68,249v155"/>

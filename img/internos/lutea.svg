@@ -9,6 +9,10 @@
              url('../fonts/Ciclos.ttf') format('truetype');
       }
 
+      text {
+        font-kerning: normal;
+      }
+
       .cls-1 {
         letter-spacing: 0em;
       }
@@ -39,7 +43,7 @@
       }
 
       .cls-3 {
-        letter-spacing: -.02em;
+        letter-spacing: 0em;
       }
 
       .cls-23 {
@@ -236,142 +240,26 @@
   <circle class="cls-28" cx="461.88" cy="170.03" r="9"/>
   <path class="cls-26" d="M192.9,60.19l172,141"/>
   <g class="cls-10">
-    <text class="cls-3" transform="translate(58.9 33.19)"><tspan x="0" y="0">C</tspan></text>
-    <text class="cls-18" transform="translate(71.39 33.19)"><tspan x="0" y="0">u</tspan></text>
-    <text class="cls-18" transform="translate(81.99 33.19)"><tspan x="0" y="0">e</tspan></text>
-    <text class="cls-18" transform="translate(92.04 33.19)"><tspan x="0" y="0">r</tspan></text>
-    <text class="cls-18" transform="translate(98.99 33.19)"><tspan x="0" y="0">p</tspan></text>
-    <text class="cls-18" transform="translate(109.86 33.19)"><tspan x="0" y="0">o l</tspan></text>
-    <text class="cls-18" transform="translate(129.55 33.19)"><tspan x="0" y="0">ú</tspan></text>
-    <text class="cls-18" transform="translate(140.22 33.19)"><tspan x="0" y="0">t</tspan></text>
-    <text class="cls-18" transform="translate(146.58 33.19)"><tspan x="0" y="0">e</tspan></text>
-    <text class="cls-18" transform="translate(156.73 33.19)"><tspan x="0" y="0">o</tspan></text>
-  </g>
-  <g class="cls-10">
-    <text class="cls-8" transform="translate(58.9 58.19)"><tspan x="0" y="0">S</tspan></text>
-    <text class="cls-8" transform="translate(68.66 58.19)"><tspan x="0" y="0">e </tspan></text>
-    <text class="cls-8" transform="translate(81.08 58.19)"><tspan x="0" y="0">f</tspan></text>
-    <text class="cls-8" transform="translate(85.56 58.19)"><tspan x="0" y="0">o</tspan></text>
-    <text class="cls-8" transform="translate(94.36 58.19)"><tspan x="0" y="0">r</tspan></text>
-    <text class="cls-8" transform="translate(99.83 58.19)"><tspan x="0" y="0">m</tspan></text>
-    <text class="cls-8" transform="translate(113.27 58.19)"><tspan x="0" y="0">a a pa</tspan></text>
-    <text class="cls-19" transform="translate(155.87 58.19)"><tspan x="0" y="0">r</tspan></text>
-    <text class="cls-8" transform="translate(161.94 58.19)"><tspan x="0" y="0">t</tspan></text>
-    <text class="cls-8" transform="translate(166.98 58.19)"><tspan x="0" y="0">ir</tspan></text>
-    <text class="cls-8" transform="translate(58.9 77.39)"><tspan x="0" y="0">d</tspan></text>
-    <text class="cls-8" transform="translate(68.04 77.39)"><tspan x="0" y="0">e</tspan></text>
-    <text class="cls-8" transform="translate(76.45 77.39)"><tspan x="0" y="0">l </tspan></text>
-    <text class="cls-8" transform="translate(84.29 77.39)"><tspan x="0" y="0">f</tspan></text>
-    <text class="cls-8" transform="translate(88.77 77.39)"><tspan x="0" y="0">olí</tspan></text>
-    <text class="cls-8" transform="translate(105.16 77.39)"><tspan x="0" y="0">c</tspan></text>
-    <text class="cls-8" transform="translate(113.17 77.39)"><tspan x="0" y="0">ulo que</tspan></text>
-    <text class="cls-8" transform="translate(58.9 96.59)"><tspan x="0" y="0">li</tspan></text>
-    <text class="cls-8" transform="translate(66.48 96.59)"><tspan x="0" y="0">b</tspan></text>
-    <text class="cls-8" transform="translate(75.72 96.59)"><tspan x="0" y="0">e</tspan></text>
-    <text class="cls-8" transform="translate(84.08 96.59)"><tspan x="0" y="0">r</tspan></text>
-    <text class="cls-8" transform="translate(89.59 96.59)"><tspan x="0" y="0">ó </tspan></text>
-    <text class="cls-8" transform="translate(102.44 96.59)"><tspan x="0" y="0">e</tspan></text>
-    <text class="cls-8" transform="translate(110.85 96.59)"><tspan x="0" y="0">l ó</tspan></text>
-    <text class="cls-8" transform="translate(127.49 96.59)"><tspan x="0" y="0">v</tspan></text>
-    <text class="cls-8" transform="translate(135.09 96.59)"><tspan x="0" y="0">ul</tspan></text>
-    <text class="cls-8" transform="translate(147.79 96.59)"><tspan x="0" y="0">o</tspan></text>
-    <text class="cls-8" transform="translate(156.51 96.59)"><tspan x="0" y="0">.</tspan></text>
+    <text class="cls-3" transform="translate(58.9 33.19)"><tspan x="0" y="0">Cuerpo Lúteo</tspan></text>
+    <text class="cls-8" transform="translate(58.9 58.19)"><tspan x="0" y="0">Se forma a partir</tspan></text>
+    <text class="cls-8" transform="translate(58.9 77.39)"><tspan x="0" y="0">del folículo que</tspan></text>
+    <text class="cls-8" transform="translate(66.48 96.59)"><tspan x="0" y="0">liberó el óvulo.</tspan></text>
   </g>
   <path class="cls-26" d="M543.9,29.19l-74,125"/>
   <g class="cls-10">
-    <text class="cls-1" transform="translate(561.9 15.19)"><tspan x="0" y="0">P</tspan></text>
-    <text class="cls-18" transform="translate(573.4 15.19)"><tspan x="0" y="0">r</tspan></text>
-    <text class="cls-18" transform="translate(580.33 15.19)"><tspan class="cls-30" x="0" y="0">o</tspan><tspan x="10.51" y="0">g</tspan></text>
-    <text class="cls-18" transform="translate(601.68 15.19)"><tspan x="0" y="0">e</tspan></text>
-    <text class="cls-18" transform="translate(611.72 15.19)"><tspan x="0" y="0">s</tspan></text>
-    <text class="cls-18" transform="translate(620.9 15.19)"><tspan x="0" y="0">t</tspan></text>
-    <text class="cls-18" transform="translate(627.26 15.19)"><tspan x="0" y="0">e</tspan></text>
-    <text class="cls-18" transform="translate(637.3 15.19)"><tspan x="0" y="0">r</tspan></text>
-    <text class="cls-18" transform="translate(644.23 15.19)"><tspan x="0" y="0">o</tspan></text>
-    <text class="cls-18" transform="translate(654.67 15.19)"><tspan x="0" y="0">n</tspan></text>
-    <text class="cls-18" transform="translate(665.24 15.19)"><tspan x="0" y="0">a</tspan></text>
+    <text class="cls-1" transform="translate(550.9 15.19)"><tspan x="0" y="0">Progesterona</tspan></text>  </g>
+  <g class="cls-10">
+    <text class="cls-20" transform="translate(550.9 39.19)"><tspan x="0" y="0">Aumenta en esta</tspan></text>
+    <text class="cls-8" transform="translate(550.9 58.39)"><tspan x="0" y="0">fase y ayuda a</tspan></text>
+    <text class="cls-8" transform="translate(550.9 77.59)"><tspan x="0" y="0">preparar el endometrio.</tspan></text>
+  </g>
+  <path class="cls-26" d="M517.9,273.19l11,31"/>
+  <g class="cls-10">
+    <text class="cls-6" transform="translate(534.9 313.19)"><tspan x="0" y="0">Si no hay embarazo</tspan></text>
   </g>
   <g class="cls-10">
-    <text class="cls-20" transform="translate(561.9 39.19)"><tspan x="0" y="0">A</tspan></text>
-    <text class="cls-8" transform="translate(572.25 39.19)"><tspan x="0" y="0">ume</tspan></text>
-    <text class="cls-8" transform="translate(603.07 39.19)"><tspan x="0" y="0">n</tspan></text>
-    <text class="cls-8" transform="translate(612.03 39.19)"><tspan x="0" y="0">ta en </tspan></text>
-    <text class="cls-8" transform="translate(651.11 39.19)"><tspan x="0" y="0">e</tspan></text>
-    <text class="cls-8" transform="translate(659.61 39.19)"><tspan x="0" y="0">s</tspan></text>
-    <text class="cls-8" transform="translate(667.11 39.19)"><tspan x="0" y="0">ta</tspan></text>
-    <text class="cls-8" transform="translate(561.9 58.39)"><tspan x="0" y="0">f</tspan></text>
-    <text class="cls-8" transform="translate(566.3 58.39)"><tspan x="0" y="0">a</tspan></text>
-    <text class="cls-8" transform="translate(574.65 58.39)"><tspan x="0" y="0">s</tspan></text>
-    <text class="cls-8" transform="translate(582.27 58.39)"><tspan x="0" y="0">e y </tspan></text>
-    <text class="cls-8" transform="translate(606.43 58.39)"><tspan x="0" y="0">a</tspan></text>
-    <text class="cls-8" transform="translate(614.8 58.39)"><tspan x="0" y="0">y</tspan></text>
-    <text class="cls-8" transform="translate(622.54 58.39)"><tspan x="0" y="0">u</tspan></text>
-    <text class="cls-8" transform="translate(631.45 58.39)"><tspan x="0" y="0">d</tspan></text>
-    <text class="cls-8" transform="translate(640.49 58.39)"><tspan x="0" y="0">a a</tspan></text>
-    <text class="cls-8" transform="translate(561.9 77.59)"><tspan x="0" y="0">p</tspan></text>
-    <text class="cls-8" transform="translate(571.02 77.59)"><tspan x="0" y="0">r</tspan></text>
-    <text class="cls-8" transform="translate(576.52 77.59)"><tspan x="0" y="0">epa</tspan></text>
-    <text class="cls-22" transform="translate(602.48 77.59)"><tspan x="0" y="0">r</tspan></text>
-    <text class="cls-8" transform="translate(607.84 77.59)"><tspan x="0" y="0">ar </tspan></text>
-    <text class="cls-8" transform="translate(625.98 77.59)"><tspan x="0" y="0">e</tspan></text>
-    <text class="cls-8" transform="translate(634.39 77.59)"><tspan x="0" y="0">l</tspan></text>
-    <text class="cls-8" transform="translate(561.9 96.79)"><tspan x="0" y="0">endom</tspan></text>
-    <text class="cls-8" transform="translate(610.8 96.79)"><tspan x="0" y="0">e</tspan></text>
-    <text class="cls-8" transform="translate(619.24 96.79)"><tspan x="0" y="0">t</tspan></text>
-    <text class="cls-8" transform="translate(624.22 96.79)"><tspan x="0" y="0">r</tspan></text>
-    <text class="cls-8" transform="translate(629.74 96.79)"><tspan x="0" y="0">i</tspan></text>
-    <text class="cls-8" transform="translate(633.53 96.79)"><tspan x="0" y="0">o</tspan></text>
-    <text class="cls-8" transform="translate(642.25 96.79)"><tspan x="0" y="0">.</tspan></text>
-  </g>
-  <path class="cls-26" d="M517.9,273.19l76,59"/>
-  <g class="cls-10">
-    <text class="cls-6" transform="translate(607.9 313.19)"><tspan x="0" y="0">Si no </tspan></text>
-    <text class="cls-6" transform="translate(651.49 313.19)"><tspan x="0" y="0">h</tspan></text>
-    <text class="cls-6" transform="translate(661.48 313.19)"><tspan x="0" y="0">a</tspan></text>
-    <text class="cls-6" transform="translate(670.85 313.19)"><tspan x="0" y="0">y</tspan></text>
-    <text class="cls-6" transform="translate(607.9 333.59)"><tspan x="0" y="0">e</tspan></text>
-    <text class="cls-6" transform="translate(617.39 333.59)"><tspan x="0" y="0">m</tspan></text>
-    <text class="cls-6" transform="translate(632.19 333.59)"><tspan x="0" y="0">b</tspan></text>
-    <text class="cls-6" transform="translate(642.36 333.59)"><tspan x="0" y="0">a</tspan></text>
-    <text class="cls-7" transform="translate(651.86 333.59)"><tspan x="0" y="0">r</tspan></text>
-    <text class="cls-6" transform="translate(658.27 333.59)"><tspan x="0" y="0">a</tspan></text>
-    <text class="cls-2" transform="translate(667.65 333.59)"><tspan x="0" y="0">z</tspan></text>
-    <text class="cls-6" transform="translate(675.78 333.59)"><tspan x="0" y="0">o</tspan></text>
-  </g>
-  <g class="cls-10">
-    <text class="cls-5" transform="translate(607.9 356.19)"><tspan x="0" y="0">E</tspan></text>
-    <text class="cls-5" transform="translate(616.7 356.19)"><tspan x="0" y="0">l </tspan></text>
-    <text class="cls-5" transform="translate(624.05 356.19)"><tspan x="0" y="0">c</tspan></text>
-    <text class="cls-5" transform="translate(631.57 356.19)"><tspan x="0" y="0">ue</tspan></text>
-    <text class="cls-5" transform="translate(647.77 356.19)"><tspan x="0" y="0">r</tspan></text>
-    <text class="cls-5" transform="translate(652.9 356.19)"><tspan x="0" y="0">p</tspan></text>
-    <text class="cls-5" transform="translate(661.54 356.19)"><tspan x="0" y="0">o l</tspan></text>
-    <text class="cls-17" transform="translate(677.14 356.19)"><tspan x="0" y="0">ú</tspan></text>
-    <text class="cls-5" transform="translate(685.66 356.19)"><tspan x="0" y="0">t</tspan></text>
-    <text class="cls-5" transform="translate(690.34 356.19)"><tspan x="0" y="0">e</tspan></text>
-    <text class="cls-5" transform="translate(698.27 356.19)"><tspan x="0" y="0">o</tspan></text>
-    <text class="cls-5" transform="translate(607.9 374.19)"><tspan x="0" y="0">i</tspan></text>
-    <text class="cls-5" transform="translate(611.46 374.19)"><tspan x="0" y="0">n</tspan></text>
-    <text class="cls-5" transform="translate(619.81 374.19)"><tspan x="0" y="0">v</tspan></text>
-    <text class="cls-5" transform="translate(627.01 374.19)"><tspan x="0" y="0">olu</tspan></text>
-    <text class="cls-5" transform="translate(647.17 374.19)"><tspan x="0" y="0">c</tspan></text>
-    <text class="cls-5" transform="translate(654.88 374.19)"><tspan x="0" y="0">io</tspan></text>
-    <text class="cls-5" transform="translate(666.68 374.19)"><tspan x="0" y="0">n</tspan></text>
-    <text class="cls-5" transform="translate(675.08 374.19)"><tspan x="0" y="0">a y</tspan></text>
-    <text class="cls-5" transform="translate(607.9 392.19)"><tspan x="0" y="0">d</tspan></text>
-    <text class="cls-5" transform="translate(616.46 392.19)"><tspan class="cls-29" x="0" y="0">i</tspan><tspan class="cls-27" x="3.48" y="0">s</tspan></text>
-    <text class="cls-5" transform="translate(626.96 392.19)"><tspan x="0" y="0">mi</tspan></text>
-    <text class="cls-5" transform="translate(643.21 392.19)"><tspan x="0" y="0">n</tspan></text>
-    <text class="cls-5" transform="translate(651.63 392.19)"><tspan x="0" y="0">uyen </tspan></text>
-    <text class="cls-5" transform="translate(687.32 392.19)"><tspan x="0" y="0">l</tspan></text>
-    <text class="cls-5" transform="translate(690.79 392.19)"><tspan x="0" y="0">a</tspan></text>
-    <text class="cls-5" transform="translate(698.62 392.19)"><tspan x="0" y="0">s</tspan></text>
-    <text class="cls-5" transform="translate(607.9 410.19)"><tspan x="0" y="0">ho</tspan></text>
-    <text class="cls-5" transform="translate(624.64 410.19)"><tspan x="0" y="0">r</tspan></text>
-    <text class="cls-5" transform="translate(629.77 410.19)"><tspan x="0" y="0">mo</tspan></text>
-    <text class="cls-5" transform="translate(650.71 410.19)"><tspan x="0" y="0">n</tspan></text>
-    <text class="cls-5" transform="translate(659.11 410.19)"><tspan x="0" y="0">a</tspan></text>
-    <text class="cls-16" transform="translate(666.94 410.19)"><tspan x="0" y="0">s</tspan></text>
-    <text class="cls-5" transform="translate(674.24 410.19)"><tspan x="0" y="0">.</tspan></text>
+    <text class="cls-5" transform="translate(534.9 356.19)"><tspan x="0" y="0">El cuerpo lúteo</tspan></text>
+    <text class="cls-5" transform="translate(534.9 374.19)"><tspan x="0" y="0">involuciona y</tspan></text>
+    <text class="cls-5" transform="translate(534.9 392.19)"><tspan x="0" y="0">disminuyen las hormonas.</tspan></text>
   </g>
 </svg>

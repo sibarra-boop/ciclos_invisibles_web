@@ -1,35 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Externo | Ciclos invisibles</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/externos.css" />
+    <meta
+      name="description"
+      content="La calidad y cantidad de sueño pueden variar a lo largo del ciclo menstrual. Estos cambios se relacionan con las variaciones hormonales y pueden influir en nuestra energía, estado de ánimo y bienestar general."
+    />
+    <title>Sueño | Ciclos Invisibles</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/externos.css" />
   </head>
-  <body>
+  <body class="sueno-page">
     <div class="page-shell">
-      <header class="site-header">
-        <a href="../" class="site-header__brand" aria-label="Ciclos invisibles, inicio">
-          <img src="../img/simbolo.png" alt="" />
+      <header class="site-header stress-header">
+        <a href="/" class="site-header__brand" aria-label="Ciclos Invisibles, inicio">
+          <img src="/img/simbolo.png" alt="" />
         </a>
         <nav class="site-header__nav" aria-label="Navegación principal">
-          <a href="../internos/">Interno</a>
-          <a href="./" aria-current="page">Externo</a>
+          <a href="/internos/">Interno</a>
+          <a href="/externos/" aria-current="page">Externo</a>
         </nav>
-        <img class="site-header__line" src="../img/linea-homebase.svg" alt="" />
+        <img class="site-header__line" src="/img/linea-homebase.svg" alt="" />
       </header>
 
+      <main class="stress-main">
+        <section class="stress-hero" aria-labelledby="sueno-title">
+          <div class="stress-intro">
+            <p class="stress-eyebrow">Estímulos externos</p>
+            <h1 id="sueno-title">Sueño</h1>
+            <p class="stress-subtitle">Descanso y energía</p>
+            <p class="stress-description">
+              La calidad y cantidad de sueño pueden variar a lo largo del ciclo menstrual. Estos cambios se relacionan con las variaciones hormonales y pueden influir en nuestra energía, estado de ánimo y bienestar general.
+            </p>
+          </div>
 
+          <figure class="stress-diagram">
+            <img
+              src="/img/externos/sueno.svg"
+              alt="Diagrama sobre cómo cambia el sueño durante las fases folicular, ovulatoria, lútea y menstrual."
+            />
+          </figure>
+        </section>
 
-<footer class="site-footer">
+        <section class="stress-details" aria-labelledby="sueno-influences-title">
+          <img class="stress-wave" src="/img/externos/fondo_externos.svg" alt="" aria-hidden="true" />
+
+          <h2 id="sueno-influences-title">¿Qué más influye?</h2>
+          <div class="stress-details-row">
+            <ul class="stress-influence-list" aria-label="Factores que pueden influir en el sueño">
+              <li>
+                <a href="/externos/estres/">
+                  <svg viewBox="0 0 36 36" aria-hidden="true">
+                    <rect x="4" y="6" width="25" height="19"></rect>
+                    <path d="M1.5 29h30M8 25v4m17-4v4"></path>
+                  </svg>
+                  <span>Uso de<br />pantallas</span>
+                </a>
+              </li>
+              <li>
+                <a href="/externos/entorno/">
+                  <svg viewBox="0 0 36 36" aria-hidden="true">
+                    <path d="M25.8 25.7A13.3 13.3 0 0 1 11 4.3 13.5 13.5 0 1 0 31.7 20a13.2 13.2 0 0 1-5.9 5.7Z"></path>
+                  </svg>
+                  <span>Rutina y<br />carga laboral</span>
+                </a>
+              </li>
+              <li>
+                <a href="/externos/entorno/">
+                  <svg viewBox="0 0 36 36" aria-hidden="true">
+                    <path d="m3 17 15-13 15 13M8 14v18h20V14M15 32v-9h6v9"></path>
+                  </svg>
+                  <span>Condiciones<br />del entorno</span>
+                </a>
+              </li>
+            </ul>
+
+            <aside class="stress-fact" aria-labelledby="sueno-fact-title">
+              <h2 id="sueno-fact-title">Sabías que...</h2>
+              <p>
+                Durante los días previos a la menstruación, las variaciones de estrógeno y progesterona pueden afectar la calidad del sueño, haciendo que te despiertes más veces o no descanses bien.
+              </p>
+            </aside>
+          </div>
+
+          <nav class="external-cycle" aria-label="Explora otros estímulos externos">
+            <h2 class="external-cycle__title">Explora otros<br />estímulos externos</h2>
+            <ol class="external-cycle__list">
+              <li>
+                <a href="/externos/tabues/">
+                  <span class="external-cycle__dot" aria-hidden="true"></span>
+                  <span>Tabúes</span>
+                </a>
+              </li>
+              <li class="external-cycle__current">
+                <a href="/externos/sueno/" aria-current="page">
+                  <span class="external-cycle__dot" aria-hidden="true"></span>
+                  <span>Sueño</span>
+                </a>
+              </li>
+              <li>
+                <a href="/externos/estres/">
+                  <span class="external-cycle__dot" aria-hidden="true"></span>
+                  <span>Estrés</span>
+                </a>
+              </li>
+              <li>
+                <a href="/externos/autopercepcion/">
+                  <span class="external-cycle__dot" aria-hidden="true"></span>
+                  <span>Autopercepción</span>
+                </a>
+              </li>
+              <li>
+                <a href="/externos/entorno/">
+                  <span class="external-cycle__dot" aria-hidden="true"></span>
+                  <span>Entorno</span>
+                </a>
+              </li>
+              <li>
+                <a href="/externos/informacion/">
+                  <span class="external-cycle__dot" aria-hidden="true"></span>
+                  <span>Información<br />y cuidados</span>
+                </a>
+              </li>
+            </ol>
+          </nav>
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-footer">
       <p class="site-footer__statement">
         Un proyecto que explora las señales del cuerpo para reconocer el ciclo menstrual como una forma de inteligencia no consciente.
       </p>
       <div class="site-footer__rule" aria-hidden="true"></div>
       <div class="site-footer__details">
         <div class="site-footer__meta">
-          <p>HECHO DESDE LA COMUNICACIÓN VISUAL</p>
+          <p>Hecho desde la comunicación visual</p>
           <p>© 2026 Ciclos Invisibles. Todos los derechos reservados.</p>
         </div>
         <div class="site-footer__credit">
@@ -43,7 +150,7 @@
           <p class="site-footer__credit-title">DISEÑO Y EDICIÓN</p>
           <p class="site-footer__names">María José Cisneros Tedy<br />Sara Paola Ibarra Larios</p>
         </div>
-        <img class="site-footer__logo" src="../img/logocentro.svg" alt="Centro" />
+        <img class="site-footer__logo" src="/img/logocentro.svg" alt="Centro" />
       </div>
     </footer>
   </body>

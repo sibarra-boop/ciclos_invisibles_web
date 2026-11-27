@@ -1,6 +1,100 @@
 ---
-import { externos } from "../../../data/externos";
-import { externalRoutes } from "../../../data/routes";
-import TopicLayout from "../../../layouts/TopicLayout.astro";
+import { assetUrl } from "../../../lib/assets";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
 ---
-<TopicLayout topic={externos.tabues} routes={externalRoutes} />
+
+<BaseLayout
+  title="Tabúes | Ciclos Invisibles"
+  description="Ideas, frases y creencias sobre la menstruación influyen en la forma en que la vivimos, hablamos y entendemos."
+  bodyClass="tabues-page"
+>
+  <main class="tabues-main">
+    <section class="tabues-hero" aria-labelledby="tabues-title">
+      <div class="tabues-intro">
+        <p class="tabues-eyebrow">Estímulos externos</p>
+        <h1 id="tabues-title">Tabúes</h1>
+        <p class="tabues-description">
+          Ideas, frases y creencias que aún circulan sobre la menstruación y condicionan la forma en que la vivimos, hablamos y entendemos.
+        </p>
+      </div>
+
+      <div class="tabues-scene" aria-label="Un mito y una realidad sobre la menstruación">
+        <img class="tabues-art" src={assetUrl("/img/externos/tabues-formas.svg")} alt="" />
+        <article class="tabues-panel tabues-panel--taboo">
+          <span class="tabues-label">El tabú</span>
+          <p class="tabues-quote">“Seguro no<br />puedes hacer<br />nada.”</p>
+        </article>
+        <article class="tabues-panel tabues-panel--reality">
+          <span class="tabues-label">La realidad</span>
+          <p class="tabues-reality">
+            Puedo continuar<br />con mis actividades,<br />aunque a veces<br />necesite adaptarlas<br />según el dolor o<br />el cansancio.
+          </p>
+        </article>
+        <a class="tabues-arrow tabues-arrow--previous" href="/externos/informacion/" aria-label="Ir a Información y cuidados, estímulo anterior">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M19 12H5m7 7-7-7 7-7"></path>
+          </svg>
+        </a>
+        <a class="tabues-arrow tabues-arrow--next" href="/externos/sueno/" aria-label="Ir a Sueño, siguiente estímulo">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 12h14m-7-7 7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="tabues-details" aria-labelledby="tabues-influence-title">
+      <img class="stress-wave" src={assetUrl("/img/externos/fondo_externos.svg")} alt="" aria-hidden="true" />
+      <h2 id="tabues-influence-title">¿Qué más influye?</h2>
+      <ul class="tabues-influence-list" aria-label="Factores relacionados con los tabúes">
+        <li><a href="/externos/entorno/">Entorno social</a></li>
+        <li><a href="/externos/informacion/">Educación</a></li>
+        <li><a href="/externos/informacion/">Sistema de salud</a></li>
+        <li><a href="/externos/informacion/">Industria de productos</a></li>
+        <li><a href="/externos/autopercepcion/">Cultura y medios</a></li>
+      </ul>
+
+      <nav class="external-cycle" aria-label="Explora otros estímulos externos">
+        <h2 class="external-cycle__title">Explora otros<br />estímulos externos</h2>
+        <ol class="external-cycle__list">
+          <li class="external-cycle__current">
+            <a href="/externos/tabues/" aria-current="page">
+              <span class="external-cycle__dot" aria-hidden="true"></span>
+              <span>Tabúes</span>
+            </a>
+          </li>
+          <li>
+            <a href="/externos/sueno/">
+              <span class="external-cycle__dot" aria-hidden="true"></span>
+              <span>Sueño</span>
+            </a>
+          </li>
+          <li>
+            <a href="/externos/estres/">
+              <span class="external-cycle__dot" aria-hidden="true"></span>
+              <span>Estrés</span>
+            </a>
+          </li>
+          <li>
+            <a href="/externos/autopercepcion/">
+              <span class="external-cycle__dot" aria-hidden="true"></span>
+              <span>Autopercepción</span>
+            </a>
+          </li>
+          <li>
+            <a href="/externos/entorno/">
+              <span class="external-cycle__dot" aria-hidden="true"></span>
+              <span>Entorno</span>
+            </a>
+          </li>
+          <li>
+            <a href="/externos/informacion/">
+              <span class="external-cycle__dot" aria-hidden="true"></span>
+              <span>Información<br />y cuidados</span>
+            </a>
+          </li>
+        </ol>
+      </nav>
+    </section>
+  </main>
+</BaseLayout>

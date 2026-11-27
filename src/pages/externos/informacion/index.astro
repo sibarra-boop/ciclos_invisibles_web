@@ -1,6 +1,103 @@
 ---
-import { externos } from "../../../data/externos";
-import { externalRoutes } from "../../../data/routes";
-import TopicLayout from "../../../layouts/TopicLayout.astro";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
 ---
-<TopicLayout topic={externos.informacion} routes={externalRoutes} />
+
+<BaseLayout
+  title="Información y cuidados | Ciclos Invisibles"
+  description="Conocer nuestro ciclo y sus variaciones nos permite tomar decisiones más informadas, prevenir malestares y cuidar nuestro bienestar emocional y cotidiano."
+  bodyClass="informacion-page"
+>
+  <main class="stress-main">
+    <section class="stress-hero" aria-labelledby="informacion-title">
+      <div class="stress-intro">
+        <p class="stress-eyebrow">Estímulos externos</p>
+        <h1 id="informacion-title">Información<br />y cuidados</h1>
+        <p class="stress-subtitle">Herramientas para<br />acompañar tu ciclo</p>
+        <p class="stress-description">
+          Conocer nuestro ciclo y sus variaciones nos permite tomar decisiones más informadas, prevenir malestares y cuidar nuestro bienestar emocional y cotidiano.
+        </p>
+      </div>
+
+      <figure class="stress-diagram">
+        <img
+          src="/img/externos/info.svg"
+          alt="Diagrama de herramientas de cuidado: infórmate, cuida tu cuerpo, atiende señales, descansa, busca apoyo y prácticas cotidianas."
+        />
+      </figure>
+    </section>
+
+    <section class="stress-details" aria-labelledby="informacion-tools-title">
+      <img class="stress-wave" src="/img/externos/fondo_externos.svg" alt="" aria-hidden="true" />
+
+      <h2 id="informacion-tools-title">Herramientas de cuidado</h2>
+      <div class="stress-details-row">
+        <ul class="stress-influence-list" aria-label="Herramientas de cuidado">
+          <li>
+            <a href="/externos/autopercepcion/">
+              <span>Alimentación consciente</span>
+            </a>
+          </li>
+          <li>
+            <a href="/externos/sueno/">
+              <span>Movimiento y energía</span>
+            </a>
+          </li>
+          <li>
+            <a href="/externos/estres/">
+              <span>Bienestar emocional</span>
+            </a>
+          </li>
+        </ul>
+
+        <aside class="stress-fact" aria-labelledby="informacion-fact-title">
+          <h2 id="informacion-fact-title">Sabías que...</h2>
+          <p>
+            Pequeños cambios en tu rutina, alimentación, descanso y manejo del estrés pueden hacer una gran diferencia en cómo vives tu ciclo.
+          </p>
+        </aside>
+      </div>
+
+      <nav class="external-cycle" aria-label="Explora otros estímulos externos">
+        <h2 class="external-cycle__title">Explora otros<br />estímulos externos</h2>
+        <ol class="external-cycle__list">
+          <li>
+            <a href="/externos/tabues/">
+              <span class="external-cycle__dot" aria-hidden="true"></span>
+              <span>Tabúes</span>
+            </a>
+          </li>
+          <li>
+            <a href="/externos/sueno/">
+              <span class="external-cycle__dot" aria-hidden="true"></span>
+              <span>Sueño</span>
+            </a>
+          </li>
+          <li>
+            <a href="/externos/estres/">
+              <span class="external-cycle__dot" aria-hidden="true"></span>
+              <span>Estrés</span>
+            </a>
+          </li>
+          <li>
+            <a href="/externos/autopercepcion/">
+              <span class="external-cycle__dot" aria-hidden="true"></span>
+              <span>Autopercepción</span>
+            </a>
+          </li>
+          <li>
+            <a href="/externos/entorno/">
+              <span class="external-cycle__dot" aria-hidden="true"></span>
+              <span>Entorno</span>
+            </a>
+          </li>
+          <li class="external-cycle__current">
+            <a href="/externos/informacion/" aria-current="page">
+              <span class="external-cycle__dot" aria-hidden="true"></span>
+              <span>Información<br />y cuidados</span>
+            </a>
+          </li>
+        </ol>
+      </nav>
+    </section>
+  </main>
+</BaseLayout>

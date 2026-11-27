@@ -3,12 +3,6 @@
   <defs>
     <style>
 
-    @font-face {
-        font-family: 'Ciclos';
-        src: url('../fonts/Ciclos.woff2') format('woff2'),
-             url('../fonts/Ciclos.ttf') format('truetype');
-      }
-
       .cls-1 {
         fill: url(#radial-gradient);
         opacity: .23;
@@ -270,17 +264,17 @@
     <path class="cls-16" d="M500.62,380.5l-150,16"/>
   </g>
   <g>
-    <text class="cls-4" transform="translate(11.62 14.5)"><tspan class="cls-32" x="0" y="0">E</tspan><tspan class="cls-18" x="9.82" y="0">ndome</tspan><tspan class="cls-30" x="61.04" y="0">t</tspan><tspan class="cls-33" x="66.77" y="0">r</tspan><tspan class="cls-21" x="73.01" y="0">io</tspan></text>
-    <text class="cls-5" transform="translate(11.62 36.5)"><tspan x="0" y="0">R</tspan><tspan class="cls-47" x="10.27" y="0">e</tspan><tspan class="cls-33" x="18.82" y="0">v</tspan><tspan class="cls-48" x="26.5" y="0">e</tspan><tspan class="cls-33" x="34.99" y="0">st</tspan><tspan x="47.54" y="0">imie</tspan><tspan class="cls-28" x="77.02" y="0">n</tspan><tspan class="cls-39" x="85.98" y="0">t</tspan><tspan x="90.97" y="0">o d</tspan><tspan class="cls-20" x="112.96" y="0">e</tspan><tspan x="121.37" y="0">l</tspan></text>
-    <text class="cls-5" transform="translate(11.62 57.5)"><tspan class="cls-47" x="0" y="0">ú</tspan><tspan class="cls-39" x="9.09" y="0">t</tspan><tspan class="cls-18" x="14.08" y="0">e</tspan><tspan class="cls-40" x="22.45" y="0">r</tspan><tspan x="27.95" y="0">o que </tspan><tspan class="cls-19" x="71.25" y="0">s</tspan><tspan class="cls-21" x="78.86" y="0">e eng</tspan><tspan class="cls-40" x="117.77" y="0">r</tspan><tspan class="cls-49" x="123.28" y="0">o</tspan><tspan class="cls-46" x="132.21" y="0">s</tspan><tspan x="139.84" y="0">a</tspan></text>
-    <text class="cls-5" transform="translate(11.62 78.5)"><tspan x="0" y="0">du</tspan><tspan class="cls-24" x="18.05" y="0">r</tspan><tspan x="23.41" y="0">a</tspan><tspan class="cls-28" x="31.87" y="0">n</tspan><tspan class="cls-39" x="40.83" y="0">t</tspan><tspan x="45.82" y="0">e </tspan><tspan class="cls-19" x="58.24" y="0">e</tspan><tspan x="66.66" y="0">l </tspan><tspan class="cls-49" x="74.5" y="0">c</tspan><tspan x="82.72" y="0">icl</tspan><tspan class="cls-30" x="98.4" y="0">o</tspan><tspan class="cls-18" x="107.12" y="0">.</tspan></text>
-    <text class="cls-4" transform="translate(499.62 13.5)"><tspan class="cls-26" x="0" y="0">D</tspan><tspan class="cls-19" x="11.68" y="0">e</tspan><tspan class="cls-41" x="20.61" y="0">s</tspan><tspan class="cls-21" x="28.82" y="0">p</tspan><tspan class="cls-35" x="38.38" y="0">r</tspan><tspan class="cls-19" x="44.54" y="0">e</tspan><tspan class="cls-18" x="53.47" y="0">ndimi</tspan><tspan class="cls-19" x="95.23" y="0">e</tspan><tspan class="cls-36" x="104.16" y="0">nt</tspan><tspan class="cls-21" x="119.13" y="0">o</tspan></text>
-    <text class="cls-5" transform="translate(499.62 35.5)"><tspan class="cls-34" x="0" y="0">E</tspan><tspan x="9.39" y="0">l endom</tspan><tspan class="cls-44" x="66.13" y="0">e</tspan><tspan class="cls-40" x="74.58" y="0">t</tspan><tspan class="cls-39" x="79.55" y="0">r</tspan><tspan x="85.07" y="0">io </tspan><tspan class="cls-19" x="101.71" y="0">s</tspan><tspan class="cls-21" x="109.33" y="0">e</tspan></text>
-    <text class="cls-5" transform="translate(499.62 56.5)"><tspan x="0" y="0">d</tspan><tspan class="cls-49" x="9.14" y="0">e</tspan><tspan class="cls-30" x="17.63" y="0">s</tspan><tspan x="25.12" y="0">p</tspan><tspan class="cls-40" x="34.24" y="0">r</tspan><tspan class="cls-18" x="39.74" y="0">ende </tspan><tspan class="cls-30" x="78.72" y="0">c</tspan><tspan x="86.74" y="0">uando</tspan></text>
-    <text class="cls-5" transform="translate(499.62 77.5)"><tspan x="0" y="0">b</tspan><tspan class="cls-19" x="9.14" y="0">a</tspan><tspan class="cls-28" x="17.65" y="0">j</tspan><tspan x="21.34" y="0">an </tspan><tspan class="cls-28" x="42.91" y="0">l</tspan><tspan class="cls-39" x="46.61" y="0">a</tspan><tspan x="54.96" y="0">s ho</tspan><tspan class="cls-36" x="84.43" y="0">r</tspan><tspan class="cls-18" x="89.9" y="0">mo</tspan><tspan class="cls-28" x="112.24" y="0">n</tspan><tspan class="cls-27" x="121.2" y="0">a</tspan><tspan class="cls-42" x="129.55" y="0">s</tspan><tspan x="137.34" y="0">.</tspan></text>
-    <text class="cls-4" transform="translate(517.62 371.5)"><tspan class="cls-31" x="0" y="0">S</tspan><tspan class="cls-21" x="10.1" y="0">ang</tspan><tspan class="cls-23" x="38.1" y="0">r</tspan><tspan class="cls-41" x="44.13" y="0">a</tspan><tspan x="53.02" y="0">do m</tspan><tspan class="cls-19" x="89.74" y="0">e</tspan><tspan class="cls-35" x="98.67" y="0">n</tspan><tspan class="cls-26" x="108.01" y="0">s</tspan><tspan class="cls-29" x="116.17" y="0">t</tspan><tspan class="cls-41" x="121.9" y="0">r</tspan><tspan class="cls-21" x="128.16" y="0">ual</tspan></text>
-    <text class="cls-5" transform="translate(517.62 393.5)"><tspan class="cls-43" x="0" y="0">E</tspan><tspan class="cls-18" x="10.05" y="0">xpu</tspan><tspan class="cls-29" x="35.33" y="0">l</tspan><tspan class="cls-21" x="39.04" y="0">sión </tspan><tspan class="cls-28" x="72.3" y="0">n</tspan><tspan class="cls-39" x="81.26" y="0">a</tspan><tspan class="cls-25" x="89.61" y="0">t</tspan><tspan x="94.51" y="0">u</tspan><tspan class="cls-23" x="103.42" y="0">r</tspan><tspan x="108.78" y="0">al</tspan></text>
-    <text class="cls-5" transform="translate(517.62 414.5)"><tspan x="0" y="0">d</tspan><tspan class="cls-19" x="9.14" y="0">e</tspan><tspan x="17.55" y="0">l endom</tspan><tspan class="cls-45" x="74.29" y="0">e</tspan><tspan class="cls-38" x="82.73" y="0">t</tspan><tspan class="cls-37" x="87.71" y="0">r</tspan><tspan x="93.23" y="0">i</tspan><tspan class="cls-30" x="97.02" y="0">o</tspan><tspan class="cls-18" x="105.74" y="0">.</tspan></text>
+    <text class="cls-4" transform="translate(11.62 14.5)"><tspan class="cls-32" x="0" y="0">Endometrio</tspan></text>
+    <text class="cls-5" transform="translate(11.62 36.5)"><tspan x="0" y="0">Revestimiento del</tspan></text>
+    <text class="cls-5" transform="translate(11.62 57.5)"><tspan class="cls-47" x="0" y="0">útero que se engrosa</tspan></text>
+    <text class="cls-5" transform="translate(11.62 78.5)"><tspan x="0" y="0">durante el ciclo.</tspan></text>
+    <text class="cls-4" transform="translate(499.62 13.5)"><tspan class="cls-26" x="0" y="0">Desprendimiento</tspan></text>
+    <text class="cls-5" transform="translate(499.62 35.5)"><tspan class="cls-34" x="0" y="0">El endometrio se</tspan></text>
+    <text class="cls-5" transform="translate(499.62 56.5)"><tspan x="0" y="0">desprende cuando</tspan></text>
+    <text class="cls-5" transform="translate(499.62 77.5)"><tspan x="0" y="0">bajan las hormonas.</tspan></text>
+    <text class="cls-4" transform="translate(517.62 371.5)"><tspan class="cls-31" x="0" y="0">Sangrado menstrual</tspan></text>
+    <text class="cls-5" transform="translate(517.62 393.5)"><tspan class="cls-43" x="0" y="0">Expulsión natural</tspan></text>
+    <text class="cls-5" transform="translate(517.62 414.5)"><tspan x="0" y="0">del endometrio.</tspan></text>
   </g>
   <circle class="cls-14" cx="288.22" cy="243.5" r="15.38"/>
   <circle class="cls-13" cx="298.68" cy="262" r="15.38"/>
