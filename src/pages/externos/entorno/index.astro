@@ -1,6 +1,116 @@
 ---
-import { externos } from "../../../data/externos";
-import { externalRoutes } from "../../../data/routes";
-import TopicLayout from "../../../layouts/TopicLayout.astro";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
 ---
-<TopicLayout topic={externos.entorno} routes={externalRoutes} />
+
+<BaseLayout
+  title="Entorno | Ciclos Invisibles"
+  description="Las condiciones de nuestro entorno, el ritmo de trabajo, la organización del tiempo y las redes de apoyo pueden influir en cómo experimentamos el ciclo menstrual."
+  bodyClass="entorno-page"
+>
+  <main class="stress-main">
+    <section class="stress-hero" aria-labelledby="entorno-title">
+      <div class="stress-intro">
+        <p class="stress-eyebrow">Estímulos externos</p>
+        <h1 id="entorno-title">Entorno</h1>
+        <p class="stress-subtitle">Trabajo, tiempo<br />y condiciones de vida</p>
+        <p class="stress-description">
+          Las condiciones de nuestro entorno —como el ritmo de trabajo, la organización del tiempo, el espacio en el que vivimos y las redes de apoyo— pueden influir en cómo experimentamos el ciclo menstrual.
+        </p>
+      </div>
+
+      <figure class="stress-diagram">
+        <img
+          src="/img/externos/Entorno.svg"
+          alt="Diagrama de factores del entorno: ritmo de vida, espacio y bienestar, condiciones de trabajo y redes de apoyo."
+        />
+      </figure>
+    </section>
+
+    <section class="stress-details" aria-labelledby="entorno-factors-title">
+      <img class="stress-wave" src="/img/externos/fondo_externos.svg" alt="" aria-hidden="true" />
+
+      <h2 id="entorno-factors-title">Factores del entorno</h2>
+      <div class="stress-details-row">
+        <ul class="stress-influence-list" aria-label="Factores que influyen en el entorno">
+          <li>
+            <a href="/externos/estres/">
+              <svg viewBox="0 0 36 36" aria-hidden="true">
+                <rect x="4" y="7" width="28" height="25" rx="3"></rect>
+                <path d="M11 4v6m14-6v6M4 14h28"></path>
+              </svg>
+              <span>Organización<br />del tiempo</span>
+            </a>
+          </li>
+          <li>
+            <a href="/externos/autopercepcion/">
+              <svg viewBox="0 0 36 36" aria-hidden="true">
+                <path d="m3 17 15-13 15 13M8 14v18h20V14M15 32v-9h6v9"></path>
+              </svg>
+              <span>Espacio<br />cotidiano</span>
+            </a>
+          </li>
+          <li>
+            <a href="/externos/autopercepcion/">
+              <svg viewBox="0 0 42 36" aria-hidden="true">
+                <circle cx="10" cy="10" r="4.5"></circle>
+                <circle cx="21" cy="8" r="4.5"></circle>
+                <circle cx="32" cy="10" r="4.5"></circle>
+                <path d="M2.5 29v-3a7.5 7.5 0 0 1 15 0v3m-4-1v-5a7.5 7.5 0 0 1 15 0v5m-4-3v-3a7.5 7.5 0 0 1 15 0v3"></path>
+              </svg>
+              <span>Redes y<br />vínculos</span>
+            </a>
+          </li>
+        </ul>
+
+        <aside class="stress-fact" aria-labelledby="entorno-fact-title">
+          <h2 id="entorno-fact-title">Sabías que...</h2>
+          <p>
+            Un entorno con mayor apoyo, flexibilidad y espacios de descanso puede hacer que transitemos el ciclo con más bienestar y menos carga.
+          </p>
+        </aside>
+      </div>
+
+      <nav class="external-cycle" aria-label="Explora otros estímulos externos">
+        <h2 class="external-cycle__title">Explora otros<br />estímulos externos</h2>
+        <ol class="external-cycle__list">
+          <li>
+            <a href="/externos/tabues/">
+              <span class="external-cycle__dot" aria-hidden="true"></span>
+              <span>Tabúes</span>
+            </a>
+          </li>
+          <li>
+            <a href="/externos/sueno/">
+              <span class="external-cycle__dot" aria-hidden="true"></span>
+              <span>Sueño</span>
+            </a>
+          </li>
+          <li>
+            <a href="/externos/estres/">
+              <span class="external-cycle__dot" aria-hidden="true"></span>
+              <span>Estrés</span>
+            </a>
+          </li>
+          <li>
+            <a href="/externos/autopercepcion/">
+              <span class="external-cycle__dot" aria-hidden="true"></span>
+              <span>Autopercepción</span>
+            </a>
+          </li>
+          <li class="external-cycle__current">
+            <a href="/externos/entorno/" aria-current="page">
+              <span class="external-cycle__dot" aria-hidden="true"></span>
+              <span>Entorno</span>
+            </a>
+          </li>
+          <li>
+            <a href="/externos/informacion/">
+              <span class="external-cycle__dot" aria-hidden="true"></span>
+              <span>Información<br />y cuidados</span>
+            </a>
+          </li>
+        </ol>
+      </nav>
+    </section>
+  </main>
+</BaseLayout>

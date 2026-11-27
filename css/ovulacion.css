@@ -119,6 +119,13 @@ body.cycle-phase-page .site-header__brand {
 
 .ovulation__feelings li {
   padding: 7px 11px;
+  transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease;
+}
+
+.ovulation__feelings li:hover {
+  border-color: var(--cream);
+  background-color: var(--cream);
+  color: var(--verde);
 }
 
 .ovulation__insights {
@@ -194,6 +201,7 @@ body.cycle-phase-page .site-header__brand {
   line-height: 1.15;
   text-align: center;
   text-decoration: none;
+  transition: transform 180ms ease;
 }
 
 .ovulation__explore-graphic {
@@ -209,7 +217,9 @@ body.cycle-phase-page .site-header__brand {
 
 .ovulation__explore:hover,
 .ovulation__explore:focus-visible {
+  z-index: 1;
   color: var(--verde);
+  transform: scale(1.3);
 }
 
 .ovulation__arrow {
@@ -228,6 +238,7 @@ body.cycle-phase-page .site-header__brand {
 
 .cycle__title {
   margin: 0;
+  font-family: var(--font-body);
   font-size: 0.62rem;
   font-weight: 400;
   letter-spacing: 0.16em;

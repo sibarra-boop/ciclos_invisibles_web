@@ -1,6 +1,113 @@
 ---
-import { externos } from "../../../data/externos";
-import { externalRoutes } from "../../../data/routes";
-import TopicLayout from "../../../layouts/TopicLayout.astro";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
 ---
-<TopicLayout topic={externos.autopercepcion} routes={externalRoutes} />
+
+<BaseLayout
+  title="Autopercepción | Ciclos Invisibles"
+  description="La forma en que nos percibimos puede variar a lo largo del ciclo menstrual, influyendo en nuestra confianza, estado de ánimo y en cómo vivimos los cambios del cuerpo."
+  bodyClass="autopercepcion-page"
+>
+  <main class="stress-main">
+    <section class="stress-hero" aria-labelledby="autopercepcion-title">
+      <div class="stress-intro">
+        <p class="stress-eyebrow">Estímulos externos</p>
+        <h1 id="autopercepcion-title">Autopercepción</h1>
+        <p class="stress-subtitle">Hábitos, imagen<br />y relación con el cuerpo</p>
+        <p class="stress-description">
+          La forma en que nos percibimos puede variar a lo largo del ciclo menstrual, influyendo en nuestra confianza, estado de ánimo y en cómo vivimos los cambios del cuerpo.
+        </p>
+      </div>
+
+      <figure class="stress-diagram">
+        <img
+          src="/img/externos/autopercepcion.svg"
+          alt="Diagrama sobre autopercepción con confianza, imagen corporal, autocrítica y relación con el cambio."
+        />
+      </figure>
+    </section>
+
+    <section class="stress-details" aria-labelledby="autopercepcion-influences-title">
+      <img class="stress-wave" src="/img/externos/fondo_externos.svg" alt="" aria-hidden="true" />
+
+      <h2 id="autopercepcion-influences-title">¿Qué más influye?</h2>
+      <div class="stress-details-row">
+        <ul class="stress-influence-list" aria-label="Factores relacionados con la autopercepción">
+          <li>
+            <a href="/externos/entorno/">
+              <svg viewBox="0 0 42 36" aria-hidden="true">
+                <path d="M5 5.5h20a4 4 0 0 1 4 4v11a4 4 0 0 1-4 4H14l-7 6v-6H5a4 4 0 0 1-4-4v-11a4 4 0 0 1 4-4Z"></path>
+                <path d="M17 10h16a4 4 0 0 1 4 4v11a4 4 0 0 1-4 4h-3l-5 5v-5"></path>
+              </svg>
+              <span>Mensajes<br />sociales</span>
+            </a>
+          </li>
+          <li>
+            <a href="/externos/tabues/">
+              <svg viewBox="0 0 36 36" aria-hidden="true">
+                <path d="M18 31S4.5 22.8 4.5 13.8a7.1 7.1 0 0 1 13.5-3.1 7.1 7.1 0 0 1 13.5 3.1C31.5 22.8 18 31 18 31Z"></path>
+              </svg>
+              <span>Comparación</span>
+            </a>
+          </li>
+          <li>
+            <a href="/externos/informacion/">
+              <svg viewBox="0 0 42 36" aria-hidden="true">
+                <path d="M21 32V16m0 8c-7 0-12-5-12-12 7 0 12 5 12 12Zm0-4c0-7 5-12 12-12 0 7-5 12-12 12Zm-9 13c-3-7-2-13 3-17m18 17c3-7 2-13-3-17"></path>
+              </svg>
+              <span>Hábitos de<br />autocuidado</span>
+            </a>
+          </li>
+        </ul>
+
+        <aside class="stress-fact" aria-labelledby="autopercepcion-fact-title">
+          <h2 id="autopercepcion-fact-title">Sabías que...</h2>
+          <p>
+            Las fluctuaciones hormonales pueden influir en tu estado de ánimo, sensibilidad emocional e imagen corporal, haciendo que algunos días te sientas más cómoda contigo misma que otros.
+          </p>
+        </aside>
+      </div>
+
+      <nav class="external-cycle" aria-label="Explora otros estímulos externos">
+        <h2 class="external-cycle__title">Explora otros<br />estímulos externos</h2>
+        <ol class="external-cycle__list">
+          <li>
+            <a href="/externos/tabues/">
+              <span class="external-cycle__dot" aria-hidden="true"></span>
+              <span>Tabúes</span>
+            </a>
+          </li>
+          <li>
+            <a href="/externos/sueno/">
+              <span class="external-cycle__dot" aria-hidden="true"></span>
+              <span>Sueño</span>
+            </a>
+          </li>
+          <li>
+            <a href="/externos/estres/">
+              <span class="external-cycle__dot" aria-hidden="true"></span>
+              <span>Estrés</span>
+            </a>
+          </li>
+          <li class="external-cycle__current">
+            <a href="/externos/autopercepcion/" aria-current="page">
+              <span class="external-cycle__dot" aria-hidden="true"></span>
+              <span>Autopercepción</span>
+            </a>
+          </li>
+          <li>
+            <a href="/externos/entorno/">
+              <span class="external-cycle__dot" aria-hidden="true"></span>
+              <span>Entorno</span>
+            </a>
+          </li>
+          <li>
+            <a href="/externos/informacion/">
+              <span class="external-cycle__dot" aria-hidden="true"></span>
+              <span>Información<br />y cuidados</span>
+            </a>
+          </li>
+        </ol>
+      </nav>
+    </section>
+  </main>
+</BaseLayout>
