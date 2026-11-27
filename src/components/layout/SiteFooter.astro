@@ -1,3 +1,7 @@
+---
+import { assetUrl } from "../../lib/assets";
+---
+
 <footer class="site-footer">
   <p class="site-footer__statement">
     Un proyecto que explora las señales del cuerpo para reconocer el ciclo menstrual como una forma de inteligencia no consciente.
@@ -19,6 +23,6 @@
       <p class="site-footer__credit-title">DISEÑO Y EDICIÓN</p>
       <p class="site-footer__names">María José Cisneros Tedy<br />Sara Paola Ibarra Larios</p>
     </div>
-    <img class="site-footer__logo" src="/img/logocentro.svg" alt="Centro" />
+    <img class="site-footer__logo" src={assetUrl("/img/logocentro.svg")} alt="Centro" />
   </div>
 </footer>

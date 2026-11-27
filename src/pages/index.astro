@@ -1,4 +1,5 @@
 ---
+import { assetUrl } from "../lib/assets";
 import HomeDiagram from "../components/sections/HomeDiagram.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
@@ -7,7 +8,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   <main class="hero">
     <section class="intro">
       <a href="https://www.ciclosinvisibles.com/" class="brand-wrap" aria-label="Ciclos Invisibles">
-        <img src="/img/logo_ciclos.svg" alt="Logo de Ciclos Invisibles" class="brand-logo" />
+        <img src={assetUrl("/img/logo_ciclos.svg")} alt="Logo de Ciclos Invisibles" class="brand-logo" />
       </a>
 
       <h2>Todo lo que sentimos tiene contexto.</h2>

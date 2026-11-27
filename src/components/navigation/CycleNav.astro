@@ -1,0 +1,40 @@
+---
+import { internos } from "../../data/internos";
+
+/*
+ * Navegación "El ciclo" de las fases internas (migrada de las vistas de internos/).
+ * Estados en css/ovulacion.css: .cycle__phase--current marca la fase activa;
+ * hover y foco agrandan el punto y destacan la etiqueta.
+ */
+
+interface Props {
+  currentSlug: string;
+}
+
+const { currentSlug } = Astro.props;
+
+// Orden del ciclo, empezando por la menstruación.
+const phases = [
+  internos["fase-menstrual"],
+  internos["fase-folicular"],
+  internos.ovulacion,
+  internos["fase-lutea"],
+];
+---
+
+<nav class="cycle" id="cycle-phases" aria-label="Fases del ciclo menstrual">
+  <h2 class="cycle__title">El ciclo</h2>
+  <ol class="cycle__list">
+    {phases.map((phase) => {
+      const isCurrent = phase.slug === currentSlug;
+      return (
+        <li class:list={["cycle__phase", { "cycle__phase--current": isCurrent }]}>
+          <a href={phase.href} aria-current={isCurrent ? "page" : undefined}>
+            <span class="cycle__dot" aria-hidden="true"></span>
+            <span class="cycle__label">{phase.displayTitle ?? phase.title}</span>
+          </a>
+        </li>
+      );
+    })}
+  </ol>
+</nav>

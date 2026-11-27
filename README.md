@@ -61,10 +61,10 @@ src/
 ├─ layouts/       Estructuras compartidas entre vistas
 ├─ components/    Encabezado, pie, navegación y secciones reutilizables
 ├─ data/          Textos, enlaces e imágenes de cada tema
+├─ lib/assets.ts  Convierte rutas "/img/..." en la URL final o en el SVG inline
 └─ styles/        Estilos generales
 
-public/img/       Imágenes que usa el sitio nuevo
-img/              Imágenes y archivos de diseño originales
+img/              Imágenes del sitio (las usa Astro desde aquí; ya no existe public/)
 css/ y js/        Código original de referencia
 internos/         HTML y contenido original de temas internos
 externos/         HTML original de temas externos
@@ -122,7 +122,7 @@ ovulacion: {
 
 Para reemplazar la imagen:
 
-1. Guarden el nuevo archivo en `public/img/internos/`.
+1. Guarden el nuevo archivo en `img/internos/`.
 2. Cambien `image` en `src/data/internos.ts`.
 3. Mantengan un texto claro en `imageAlt`.
 
@@ -140,7 +140,9 @@ Los temas externos funcionan igual, pero sus textos están en [`src/data/externo
 | Estructura de las fases internas | `src/layouts/InternalPhaseLayout.astro` |
 | Estructura de los temas externos | `src/layouts/TopicLayout.astro` |
 | Colores y estilos generales | `src/styles/global.css` |
-| Una imagen publicada | `public/img/` |
+| Una imagen | `img/` (y su ruta en `src/data/`) |
+| Navegación "El ciclo" de las fases | `src/components/navigation/CycleNav.astro` |
+| Portada de Interno / Externo | `src/components/sections/TopicHome.astro` |
 
 ## Referencias del diseño original
 

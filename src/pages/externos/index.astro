@@ -1,5 +1,4 @@
 ---
-import diagram from "../../../img/externos/homeexternos.svg?raw";
 import TopicHome from "../../components/sections/TopicHome.astro";
 import { externalRoutes } from "../../data/routes";
 import BaseLayout from "../../layouts/BaseLayout.astro";
@@ -11,7 +10,14 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     title="Nada sucede de manera aislada."
     description="Explora los factores externos que se relacionan con tu bienestar menstrual y descubre cómo forman parte de una misma red."
     buttonLabel="Explora las conexiones"
-    diagram={diagram}
-    routes={externalRoutes}
-  />
+    buttonTarget="conexiones"
+    diagram="/img/externos/homeexternos.svg"
+  >
+    <section class="topic-home__related" id="conexiones" aria-labelledby="conexiones-title">
+      <h2 id="conexiones-title">Explora cada tema</h2>
+      <div class="topic-home__grid">
+        {externalRoutes.map((route) => <a href={route.href}>{route.title}</a>)}
+      </div>
+    </section>
+  </TopicHome>
 </BaseLayout>

@@ -1,4 +1,5 @@
 ---
+import { assetUrl } from "../../lib/assets";
 import { mainRoutes } from "../../data/routes";
 
 interface Props {
@@ -10,7 +11,7 @@ const { pathname } = Astro.props;
 
 <header class="site-header">
   <a href="/" class="site-header__brand" aria-label="Ciclos Invisibles, inicio">
-    <img src="/img/simbolo.png" alt="" />
+    <img src={assetUrl("/img/simbolo.png")} alt="" />
   </a>
   <nav class="site-header__nav" aria-label="Navegación principal">
     {mainRoutes.map((route) => (
@@ -19,5 +20,5 @@ const { pathname } = Astro.props;
       </a>
     ))}
   </nav>
-  <img class="site-header__line" src="/img/linea-homebase.svg" alt="" />
+  <img class="site-header__line" src={assetUrl("/img/linea-homebase.svg")} alt="" />
 </header>

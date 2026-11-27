@@ -1,4 +1,5 @@
 ---
+import { assetUrl } from "../../../lib/assets";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 ---
 
@@ -20,14 +21,14 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 
       <figure class="stress-diagram">
         <img
-          src="/img/externos/Entorno.svg"
+          src={assetUrl("/img/externos/Entorno.svg")}
           alt="Diagrama de factores del entorno: ritmo de vida, espacio y bienestar, condiciones de trabajo y redes de apoyo."
         />
       </figure>
     </section>
 
     <section class="stress-details" aria-labelledby="entorno-factors-title">
-      <img class="stress-wave" src="/img/externos/fondo_externos.svg" alt="" aria-hidden="true" />
+      <img class="stress-wave" src={assetUrl("/img/externos/fondo_externos.svg")} alt="" aria-hidden="true" />
 
       <h2 id="entorno-factors-title">Factores del entorno</h2>
       <div class="stress-details-row">

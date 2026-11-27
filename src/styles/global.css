@@ -43,9 +43,48 @@
   }
 }
 
-.topic-home__graphic {
-  width: min(100%, 640px);
-  margin: 0 auto;
+/* Portadas de sección (Interno / Externo): diagrama inline con un link por tema */
+.topic-home__graphic a {
+  cursor: pointer;
+}
+
+.topic-home__graphic a:focus-visible {
+  outline: none;
+}
+
+.topic-home__graphic a path,
+.topic-home__graphic a circle,
+.topic-home__graphic a text {
+  transition: filter 180ms ease, fill 180ms ease, opacity 180ms ease;
+}
+
+.topic-home__graphic a.is-active path,
+.topic-home__graphic a.is-active circle {
+  filter: brightness(1.18) drop-shadow(0 0 14px rgb(246 243 236 / 35%));
+}
+
+.topic-home__graphic a.is-active text {
+  fill: var(--lime);
+}
+
+/* Sin JS, al menos el elemento bajo el cursor o con foco reacciona */
+.topic-home__graphic a:hover text,
+.topic-home__graphic a:focus-visible text {
+  fill: var(--lime);
+}
+
+.topic-home__graphic a:focus-visible path,
+.topic-home__graphic a:focus-visible circle {
+  stroke: var(--lime);
+  stroke-width: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .topic-home__graphic a path,
+  .topic-home__graphic a circle,
+  .topic-home__graphic a text {
+    transition: none;
+  }
 }
 
 .topic-home__graphic svg {

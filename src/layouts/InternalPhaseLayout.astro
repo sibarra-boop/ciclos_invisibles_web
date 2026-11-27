@@ -1,23 +1,24 @@
 ---
+import CycleNav from "../components/navigation/CycleNav.astro";
 import type { InternalPhaseContent } from "../data/types";
-import { internos } from "../data/internos";
+import { assetUrl, inlineSvg } from "../lib/assets";
 import BaseLayout from "./BaseLayout.astro";
 import "../../css/ovulacion.css";
 
 interface Props {
   topic: InternalPhaseContent;
-  inlineDiagram?: string;
 }
 
-const { topic, inlineDiagram } = Astro.props;
+const { topic } = Astro.props;
 const pageTitle = topic.displayTitle ?? topic.title;
 const phaseLabel = topic.slug === "ovulacion" ? "la ovulación" : `la ${topic.title.toLowerCase()}`;
-const cyclePhases = [
-  internos["fase-menstrual"],
-  internos["fase-folicular"],
-  internos.ovulacion,
-  internos["fase-lutea"],
-];
+
+// El diagrama va inline para que use la tipografía Ciclos (dentro de <img> no carga fuentes).
+// Si el SVG no trae su propio nombre accesible, se le da el de imageAlt.
+const svg = inlineSvg(topic.image);
+const diagram = /<svg[^>]*\b(role|aria-label|aria-labelledby)=/.test(svg)
+  ? svg
+  : svg.replace("<svg", `<svg role="img" aria-label="${topic.imageAlt.replaceAll('"', "&quot;")}"`);
 ---
 
 <BaseLayout
@@ -34,11 +35,7 @@ const cyclePhases = [
       </div>
 
       <figure class="ovulation__diagram">
-        {inlineDiagram ? (
-          <Fragment set:html={inlineDiagram} />
-        ) : (
-          <img src={topic.image} alt={topic.imageAlt} />
-        )}
+        <Fragment set:html={diagram} />
       </figure>
 
       <aside class="ovulation__feelings" aria-labelledby={`${topic.slug}-feelings-title`}>
@@ -72,24 +69,12 @@ const cyclePhases = [
       </div>
 
       <a class="ovulation__explore" href="/">
-        <img class="ovulation__explore-graphic" src={topic.exploreImage} alt="" aria-hidden="true" />
+        <img class="ovulation__explore-graphic" src={assetUrl(topic.exploreImage)} alt="" aria-hidden="true" />
         <span>Explora<br />más relaciones</span>
         <span class="ovulation__arrow" aria-hidden="true">→</span>
       </a>
     </section>
 
-    <nav class="cycle" id="cycle-phases" aria-label="Fases del ciclo menstrual">
-      <h2 class="cycle__title">El ciclo</h2>
-      <ol class="cycle__list">
-        {cyclePhases.map((phase) => (
-          <li class:list={["cycle__phase", { "cycle__phase--current": phase.slug === topic.slug }]}>
-            <a href={phase.href} aria-current={phase.slug === topic.slug ? "page" : undefined}>
-              <span class="cycle__dot" aria-hidden="true"></span>
-              <span class="cycle__label">{phase.displayTitle ?? phase.title}</span>
-            </a>
-          </li>
-        ))}
-      </ol>
-    </nav>
+    <CycleNav currentSlug={topic.slug} />
   </main>
 </BaseLayout>

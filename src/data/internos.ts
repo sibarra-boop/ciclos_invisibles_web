@@ -22,7 +22,7 @@ export const internos: Record<string, InternalPhaseContent> = {
     section: "internos",
     description: "Es el momento en el que se libera un óvulo desde el ovario. Suele ocurrir hacia la mitad del ciclo, aunque el momento exacto puede variar. Es parte de nuestro proceso hormonal que conecta distintas señales.",
     image: "/img/internos/ovulacion.svg",
-    imageAlt: "Ilustración de la ovulación",
+    imageAlt: "Diagrama de la ovulación, sus cambios hormonales y la liberación del óvulo",
     exploreImage: "/img/internos/ovulacion_internos_ex.svg",
     feelings: ["Cambios de energía", "Cambios en el deseo", "Variaciones del ánimo", "Mayor sensibilidad", "Molestias leves"],
     influence: "La experiencia de esta fase también puede variar por nuestro sueño, el estrés, la alimentación y nuestro entorno.",

@@ -1,4 +1,5 @@
 ---
+import { assetUrl } from "../lib/assets";
 import TopicNav from "../components/navigation/TopicNav.astro";
 import type { TopicContent, TopicRoute } from "../data/types";
 import BaseLayout from "./BaseLayout.astro";
@@ -17,7 +18,7 @@ const sectionLabel = topic.section === "internos" ? "Fases del ciclo" : "Factore
     <p class="topic-detail__eyebrow">{sectionLabel}</p>
     <h1>{topic.title}</h1>
     <p class="topic-detail__description">{topic.description}</p>
-    <img class="topic-detail__image" src={topic.image} alt={topic.imageAlt} />
+    <img class="topic-detail__image" src={assetUrl(topic.image)} alt={topic.imageAlt} />
     <slot />
     <TopicNav routes={routes} currentPath={topic.href} />
   </main>

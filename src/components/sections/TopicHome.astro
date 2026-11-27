@@ -1,16 +1,37 @@
 ---
-import type { TopicRoute } from "../../data/types";
+import { inlineSvg } from "../../lib/assets";
+import type { SectionId } from "../../data/types";
+
+/*
+ * Portada de sección (Interno / Externo), migrada de internos/index.html y externos/index.html.
+ * - El botón baja al ancla `buttonTarget`. Si no hay contenido extra, el ancla es el propio diagrama.
+ * - El diagrama se inserta inline: así sus <a> por fase son clicables, tienen hover/foco
+ *   (ver "Portadas de sección" en src/styles/global.css) y usan la tipografía Ciclos.
+ * - <slot /> permite agregar secciones debajo del hero.
+ */
 
 interface Props {
-  id: string;
+  id: SectionId;
   title: string;
   description: string;
   buttonLabel: string;
+  buttonTarget: string;
   diagram: string;
-  routes: TopicRoute[];
 }
 
-const { id, title, description, buttonLabel, diagram, routes } = Astro.props;
+const { id, title, description, buttonLabel, buttonTarget, diagram } = Astro.props;
+const hasExtraContent = Astro.slots.has("default");
+
+// En el SVG cada tema tiene dos <a> (forma y etiqueta) con el mismo href.
+// Sólo el primero queda en el orden de tabulación y para lectores de pantalla.
+const seen = new Set<string>();
+const svg = inlineSvg(diagram).replace(/<a\b([^>]*?)href="([^"]+)"([^>]*)>/g, (tag, before, href, after) => {
+  if (!seen.has(href)) {
+    seen.add(href);
+    return tag;
+  }
+  return `<a${before}href="${href}"${after} tabindex="-1" aria-hidden="true">`;
+});
 ---
 
 <main>
@@ -19,18 +40,33 @@ const { id, title, description, buttonLabel, diagram, routes } = Astro.props;
       <div class="topic-home__content">
         <h1 id={`${id}-title`} class="subtitle">{title}</h1>
         <p class="topic-home__description">{description}</p>
-        <a class="button" href={`#${id}-temas`}><span>{buttonLabel}</span></a>
+        <a class="button" href={`#${buttonTarget}`}><span>{buttonLabel}</span></a>
       </div>
     </section>
-    <figure class="topic-home__graphic">
-      <Fragment set:html={diagram} />
+    <figure
+      class:list={["topic-home__graphic", `${id}-home__graphic`]}
+      id={hasExtraContent ? undefined : buttonTarget}
+    >
+      <Fragment set:html={svg} />
     </figure>
   </div>
-
-  <section class="topic-home__related" id={`${id}-temas`} aria-labelledby={`${id}-temas-title`}>
-    <h2 id={`${id}-temas-title`}>Explora cada tema</h2>
-    <div class="topic-home__grid">
-      {routes.map((route) => <a href={route.href}>{route.title}</a>)}
-    </div>
-  </section>
+  <slot />
 </main>
+
+<script>
+  // Hover/foco en la forma o en la etiqueta de un tema ilumina ambas (.is-active).
+  for (const figure of document.querySelectorAll<HTMLElement>(".topic-home__graphic")) {
+    const links = Array.from(figure.querySelectorAll<SVGAElement>("a[href]"));
+    const setActive = (href: string | null) => {
+      for (const link of links) link.classList.toggle("is-active", link.getAttribute("href") === href);
+    };
+
+    for (const link of links) {
+      const href = link.getAttribute("href");
+      link.addEventListener("pointerenter", () => setActive(href));
+      link.addEventListener("pointerleave", () => setActive(null));
+      link.addEventListener("focus", () => setActive(href));
+      link.addEventListener("blur", () => setActive(null));
+    }
+  }
+</script>
