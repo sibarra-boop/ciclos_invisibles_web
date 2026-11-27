@@ -22,6 +22,25 @@
 }
 
 /* Home: el diagrama gira y los círculos son los links */
+#chart .chart-link {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+  /* left/top los pone el script en el centro del círculo; esto centra la etiqueta en ese punto */
+  transform: translate(-50%, -50%);
+}
+
+#chart .chart-1 {
+  position: static;
+  width: max-content;
+  max-width: 14em;
+  margin: 4px 0 0;
+  white-space: normal;
+}
+
 .circle-link:focus-visible {
   outline: none;
 }

@@ -6,7 +6,7 @@ import type { TopicRoute } from "../../data/types";
  * Diagrama de la home (portado de /index.html + /js/diagrama-nav.js).
  * Los grupos #internos y #externos giran con CSS (css/style.css, @keyframes spin).
  * Cada círculo del SVG es el link real; las etiquetas .chart-link son decorativas
- * y un script las reposiciona en cada frame para que sigan al círculo mientras gira.
+ * y un script las centra en cada frame sobre su círculo mientras gira.
  */
 
 const bySlug = (routes: TopicRoute[], slug: string) => {
@@ -115,9 +115,12 @@ const externos = {
     const update = () => {
       const chartRect = chart.getBoundingClientRect();
       for (const { label, circle } of pairs) {
+        // Centro del círculo relativo a #chart. Un círculo girado conserva su caja,
+        // así que el centro de getBoundingClientRect es el centro real.
+        // El CSS (translate -50% -50%) centra la etiqueta sobre este punto.
         const rect = circle.getBoundingClientRect();
-        label.style.left = `${Math.round(rect.left - chartRect.left)}px`;
-        label.style.top = `${Math.round(rect.top - chartRect.top)}px`;
+        label.style.left = `${rect.left + rect.width / 2 - chartRect.left}px`;
+        label.style.top = `${rect.top + rect.height / 2 - chartRect.top}px`;
       }
       requestAnimationFrame(update);
     };
