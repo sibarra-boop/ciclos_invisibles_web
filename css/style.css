@@ -15,8 +15,8 @@
 
 @font-face {
   font-family: "Ciclos";
-  src: url(../fonts/Ciclos.ttf) format("truetype");
   src: url(../fonts/Ciclos.woff2) format("woff2");
+  src: url(../fonts/Ciclos.ttf) format("truetype");
 }
 
 * { box-sizing: border-box; }

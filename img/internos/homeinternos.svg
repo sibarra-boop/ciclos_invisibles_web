@@ -3,7 +3,7 @@
   <defs>
     <style>
     @font-face {
-        font-family: Ciclos';
+        font-family: 'Ciclos';
         src: url('../fonts/Ciclos.woff2') format('woff2'),
              url('../fonts/Ciclos.ttf') format('truetype');
       }
@@ -143,54 +143,27 @@
   <path class="cls-13" d="M352.3,54.02c-10,17-12,22-12,30,0,6.63,5.37,12,12,12s12-5.37,12-12C364.3,76.02,361.3,70.02,352.3,54.02Z"/>
   <a href="/internos/fase-menstrual/" aria-label="Fase menstrual">
   <g class="cls-5">
-    <text class="cls-4" transform="translate(291.33 124.64)"><tspan x="0" y="0">M</tspan></text>
-    <text class="cls-4" transform="translate(310.26 124.64)"><tspan x="0" y="0">e</tspan></text>
-    <text class="cls-4" transform="translate(321.78 124.64)"><tspan x="0" y="0">n</tspan></text>
-    <text class="cls-4" transform="translate(334.11 124.64)"><tspan x="0" y="0">s</tspan></text>
-    <text class="cls-4" transform="translate(344.44 124.64)"><tspan class="cls-16" x="0" y="0">t</tspan><tspan x="6.84" y="0">r</tspan></text>
-    <text class="cls-4" transform="translate(358.84 124.64)"><tspan x="0" y="0">ua</tspan></text>
-    <text class="cls-4" transform="translate(382.73 124.64)"><tspan x="0" y="0">c</tspan></text>
-    <text class="cls-4" transform="translate(394.05 124.64)"><tspan x="0" y="0">ión</tspan></text>
+    <text class="cls-4" transform="translate(291.33 124.64)">Menstruación</text>
   </g>
   </a>
   <path class="cls-14" d="M100.73,233.96q16.89,9.5,9.5,31.67Q93.34,256.13,100.73,233.96M110.55,265.49q11.62-17.94,29.03-4.75Q127.44,273.94,110.55,265.49M110.61,265.75c-4.83,6.14-5.45,13.46-4.66,21.16"/>
   <a href="/internos/fase-folicular/" aria-label="Fase folicular">
   <g class="cls-5">
-    <text class="cls-1" transform="translate(85.3 314.78)"><tspan x="0" y="0">F</tspan></text>
-    <text class="cls-6" transform="translate(96.7 314.78)"><tspan x="0" y="0">a</tspan></text>
-    <text class="cls-6" transform="translate(107.67 314.78)"><tspan x="0" y="0">s</tspan></text>
-    <text class="cls-6" transform="translate(117.66 314.78)"><tspan x="0" y="0">e</tspan></text>
-    <text class="cls-6" transform="translate(85.3 339.98)"><tspan x="0" y="0">f</tspan></text>
-    <text class="cls-6" transform="translate(91.18 339.98)"><tspan x="0" y="0">oli</tspan></text>
-    <text class="cls-6" transform="translate(112.68 339.98)"><tspan x="0" y="0">c</tspan></text>
-    <text class="cls-6" transform="translate(123.2 339.98)"><tspan x="0" y="0">u</tspan></text>
-    <text class="cls-6" transform="translate(134.9 339.98)"><tspan x="0" y="0">l</tspan></text>
-    <text class="cls-6" transform="translate(139.75 339.98)"><tspan x="0" y="0">ar</tspan></text>
+    <text class="cls-1" transform="translate(85.3 314.78)">Fase</text>
+    <text class="cls-6" transform="translate(85.3 339.98)">folicular</text>
   </g>
   </a>
   <path class="cls-15" d="M597.08,241.24q0,24,21,26-21,2-21,26-2-24-23-26Q595.08,265.24,597.08,241.24Z"/>
   <a href="/internos/ovulacion/" aria-label="Ovulación">
   <g class="cls-5">
-    <text class="cls-9" transform="translate(548.1 319.73)"><tspan x="0" y="0">O</tspan></text>
-    <text class="cls-6" transform="translate(564.19 319.73)"><tspan x="0" y="0">v</tspan></text>
-    <text class="cls-6" transform="translate(574.16 319.73)"><tspan x="0" y="0">u</tspan></text>
-    <text class="cls-6" transform="translate(585.86 319.73)"><tspan x="0" y="0">l</tspan></text>
-    <text class="cls-6" transform="translate(590.71 319.73)"><tspan x="0" y="0">a</tspan></text>
-    <text class="cls-6" transform="translate(601.82 319.73)"><tspan x="0" y="0">c</tspan></text>
-    <text class="cls-6" transform="translate(612.61 319.73)"><tspan x="0" y="0">ión</tspan></text>
+    <text class="cls-9" transform="translate(548.1 319.73)">Ovulación</text>
   </g>
   </a>
   <path class="cls-12" d="M351.07,469.53c-11.51,3.88-17.69,16.37-13.8,27.88,3.88,11.51,16.37,17.69,27.88,13.8,5.01-1.69,9.24-5.13,11.92-9.68-10.23,5.46-22.95,1.6-28.42-8.63C344.62,485.35,345.57,476.1,351.07,469.53Z"/>
   <a href="/internos/fase-lutea/" aria-label="Fase lútea">
   <g class="cls-5">
-    <text class="cls-1" transform="translate(333.92 542.08)"><tspan x="0" y="0">F</tspan></text>
-    <text class="cls-6" transform="translate(345.32 542.08)"><tspan x="0" y="0">a</tspan></text>
-    <text class="cls-6" transform="translate(356.29 542.08)"><tspan x="0" y="0">s</tspan></text>
-    <text class="cls-6" transform="translate(366.28 542.08)"><tspan x="0" y="0">e</tspan></text>
-    <text class="cls-6" transform="translate(333.92 567.28)"><tspan x="0" y="0">l</tspan></text>
-    <text class="cls-9" transform="translate(338.9 567.28)"><tspan x="0" y="0">ú</tspan></text>
-    <text class="cls-6" transform="translate(350.82 567.28)"><tspan x="0" y="0">t</tspan></text>
-    <text class="cls-6" transform="translate(357.38 567.28)"><tspan x="0" y="0">ea</tspan></text>
+    <text class="cls-1" transform="translate(333.92 542.08)">Fase</text>
+    <text class="cls-6" transform="translate(333.92 567.28)">lútea</text>
   </g>
   </a>
 </svg>
